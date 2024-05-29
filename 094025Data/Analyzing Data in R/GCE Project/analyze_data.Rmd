@@ -1,0 +1,104 @@
+---
+title: "Analyzing Data in R"
+output: html_notebook
+---
+
+# Load the dataset
+```{r}
+
+
+```
+# Review the data types of each feature
+```{r}
+
+
+```
+# Convert the feature to a more appropriate data type
+```{r}
+
+
+```
+# Identify correlations between the numeric variables
+```{r}
+
+
+
+
+
+```
+# Generate summary statistics
+```{r}
+
+```
+# Generate standard deviation measurements
+```{r}
+
+```
+# Install and load the moments package
+```{r}
+
+
+```
+# Generate skewness measurements
+```{r}
+
+```
+# Generate kurtosis measurements
+```{r}
+
+```
+# Get the top revenue of each branch, not including missing values
+```{r}
+
+```
+# Identify missing revenue values
+```{r}
+
+```
+# Get all rows with missing values
+```{r}
+
+
+
+
+
+
+
+
+
+```
+# Fill in the missing gender values
+```{r}
+
+
+```
+# Fill in the missing quantity values
+```{r}
+
+
+```
+# Identify rows with erroneous quantities
+```{r}
+
+```
+# Drop rows with erroneous quantities
+```{r}
+
+
+```
+# Impute the missing COGS values
+```{r}
+
+
+
+
+
+
+
+```
+# Recalculate revenue and gross income
+```{r}
+
+
+
+```

@@ -1,0 +1,123 @@
+---
+title: "Structuring Code for Reuse"
+output: html_notebook
+---
+
+# Define the sales transaction data
+```{r}
+sales_df <- data.frame(UnitPrice = c(87.67, 20.01, 30.14, 83.24, 98.98),
+                       Quantity = c(2L, 9L, 10L, 9L, 10L),
+                       COGS = c(170.12, 174.55, 284.76, 709.60, 955.90),
+                       CustomerType = factor(c("N", "M", "M", "N", "N")))
+sales_df
+```
+# Define a function to print all values from a column
+```{r}
+
+
+
+
+
+```
+# Call the function to print all values from a column
+```{r}
+
+```
+# Define a function to obtain revenue with the membership discount applied
+```{r}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+# Call the function to obtain revenue
+```{r}
+
+```
+# Define a function to obtain gross income
+```{r}
+
+
+
+
+
+
+
+
+
+```
+# Call the function to obtain gross income
+```{r}
+
+```
+# Get a list of max values for each numeric variable
+```{r}
+
+```
+# Get a simplified vector of max values for each numeric variable
+```{r}
+
+```
+# Get the highest unit price for members and non-members
+```{r}
+
+```
+# Get the floor of the minimum values for both monetary variables
+```{r}
+
+```
+# Define the customer sentiment data
+```{r}
+cust_df <- data.frame(ProdScores = c(5.7, 7.2, 8.9, 4.0, 6.1, 6.1),
+                      ServScores = c(9.2, 4.0, 4.0, 4.5, 8.9, 5.2),
+                      Return = factor(c("Yes", "No", "No",
+                                        "Yes", "Yes", "Yes")))
+cust_df
+```
+# Get the average of both scores for each customer
+```{r}
+
+```
+# Generate a new data frame of random product and customer service scores
+```{r}
+
+
+
+
+```
+# Identify the paths to your R library
+```{r}
+
+```
+# Identify the packages currently loaded in the R session
+```{r}
+
+```
+# Download and install the tidyverse collection
+```{r}
+
+```
+# Load the dplyr package from tidyverse
+```{r}
+
+
+```
+# Use a function from the dplyr package
+```{r}
+
+```
+# Reference a function with the same name from the stats package
+```{r}
+
+```

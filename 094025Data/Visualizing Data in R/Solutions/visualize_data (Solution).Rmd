@@ -1,0 +1,231 @@
+---
+title: "Visualizing Data in R"
+output: html_notebook
+---
+
+# Load the dataset and relevant packages
+```{r message = FALSE}
+library(dplyr)
+library(lubridate)
+load("../data/gce_trial.rda")
+gce_trial
+```
+# Generate a scatter plot comparing revenue and gross income
+```{r}
+plot(gce_trial$Revenue, gce_trial$GrossIncome)
+```
+# Generate a line plot of revenue over each day in January
+```{r}
+jan_only <- gce_trial %>% filter(month(DateTime) == 1)
+days_rev <- jan_only %>% group_by(Days = mday(DateTime)) %>% summarize(Revenue = sum(Revenue))
+
+plot(days_rev$Days, days_rev$Revenue, type = "l")
+```
+# Generate a bar chart of each branch's total revenue
+```{r}
+branch_rev <- gce_trial %>% group_by(Branch = Branch) %>% summarize(TotalRevenue = sum(Revenue))
+
+barplot(branch_rev$TotalRevenue, names.arg = branch_rev$Branch)
+```
+# Generate a histogram showing the distribution of COGS
+```{r}
+hist(gce_trial$COGS)
+```
+# Generate a box plot showing the distribution of COGS
+```{r}
+boxplot(gce_trial$COGS)
+```
+# Load the ggplot2 package
+```{r}
+library(ggplot2)
+```
+# Generate a histogram of revenue
+```{r}
+ggplot(gce_trial) + geom_histogram(aes(Revenue), bins = 10)
+```
+# Generate violin plots comparing the gross income distribution across each branch
+```{r}
+ggplot(gce_trial) + geom_violin(aes(Branch, GrossIncome), draw_quantiles = 0.5)
+```
+# Generate stack plots to compare total items sold for each day in the first three months
+```{r}
+jan_feb_quant <- gce_trial %>% group_by(Days = mday(DateTime), Month = month(DateTime)) %>% summarize(Quantity = sum(Quantity))
+jan_feb_quant$Month <- as.factor(jan_feb_quant$Month)
+levels(jan_feb_quant$Month) <- c("Jan", "Feb", "Mar")
+
+ggplot(jan_feb_quant) + geom_area(aes(Days, Quantity, fill = Month, group = Month))
+```
+# Generate a scatter plot comparing quantity to revenue
+```{r}
+ggplot(gce_trial) + geom_point(aes(Quantity, Revenue))
+```
+# Generate a jitter plot comparing quantity to revenue by gender
+```{r}
+ggplot(gce_trial) + geom_jitter(aes(Quantity, Revenue, color = CustGender))
+```
+# Generate a bar chart of mean revenue for each branch for the health and beauty product line
+```{r}
+hlth_beaut <- gce_trial %>% filter(ProductLine == "Health and beauty")
+branch_sum <- hlth_beaut %>% group_by(Branch) %>% summarize(MeanRevenue = mean(Revenue))
+
+ggplot(branch_sum) + geom_bar(aes(Branch, MeanRevenue), stat = "identity")
+```
+# Create a data frame for plotting total revenue each day for January and February
+```{r}
+jan_feb <- gce_trial %>% filter(month(DateTime) %in% c(1, 2))
+rev_sum <- jan_feb %>% group_by(Days = mday(DateTime), Month = month(DateTime)) %>% summarize(TotalRev = sum(Revenue))
+rev_sum$Month <- as.factor(rev_sum$Month)
+
+rev_sum
+```
+# Generate a line graph of revenue by month
+```{r}
+rev_gg <- ggplot(rev_sum)
+rev_plt <- rev_gg + geom_line(aes(Days, TotalRev, group = Month, color = Month, linetype = Month), size = 1)
+
+rev_plt
+```
+# Add a title to the plot and format it
+```{r}
+rev_plt <- rev_plt + ggtitle("Daily Revenue for One Month")
+rev_plt <- rev_plt + theme(plot.title = element_text(family = "serif", face = "bold", color = "grey30", size = 14, hjust = 0.5))
+
+rev_plt
+```
+# Modify the axis labels
+```{r}
+rev_plt <- rev_plt + ylab("Revenue \n(USD)") + theme(axis.title.y = element_text(face = "bold", angle = 0, vjust = 0.5, color = "grey30"))
+
+rev_plt <- rev_plt + xlab("Day of Month") + theme(axis.title.x = element_text(face = "bold", color = "grey30"))
+
+rev_plt
+```
+# Expand the y-axis upper limit
+```{r}
+rev_plt <- rev_plt + ylim(0, 8000)
+
+rev_plt
+```
+# Add more ticks to the x-axis
+```{r}
+rev_plt <- rev_plt + scale_x_continuous(breaks = seq(0, 30, 5))
+
+rev_plt
+```
+# Modify the legend
+```{r}
+rev_plt <- rev_plt + theme(legend.background = element_rect(color = "grey"), legend.key = element_rect(fill = NA), legend.title = element_text(hjust = 0.5))
+
+rev_plt
+```
+# Apply a color palette to the lines and change the legend item labels
+```{r}
+pal <- c("#CD5C5C", "#3C7FC2", "#3C3C97", "#89BB3D")
+leg_lbls <- c("January", "February") 
+
+rev_plt <- rev_plt + scale_color_manual(values = pal, name = "Month", labels = leg_lbls)
+
+rev_plt
+```
+# Change the line types
+```{r}
+rev_plt <- rev_plt + scale_linetype_manual(values = c("twodash", "solid"), name = "Month", labels = leg_lbls)
+
+rev_plt
+```
+# Add an annotation explaining a sharp drop in revenue
+```{r}
+rev_plt <- rev_plt + annotate("segment", x = 9, y = 900, xend = 12.5, yend = 900, arrow = arrow(length = unit(2, "mm")))
+
+rev_plt <- rev_plt + annotate("text", x = 7, y = 900, label = "Snowstorm", size = 2.5)
+
+rev_plt
+```
+# Save the revenue line plot as a file
+```{r}
+ggsave("rev_jan_feb.png", width = 7.5, height = 5)
+```
+# Generate a bar chart that compares the quantity sold for each product line and branch
+```{r}
+qty_sum <- gce_trial %>% group_by(ProductLine, Branch, CustReturned) %>% summarize(Quantity = sum(Quantity))
+
+prod_bar <- ggplot(qty_sum) +
+  geom_bar(aes(ProductLine, Quantity, fill = Branch), color = "black", position = "dodge", stat = "identity") +
+  ggtitle("Quantity Sold for Each Product Line") +
+  theme(plot.title = element_text(face = "bold", size = 12, hjust = 0.5)) +
+  theme(panel.grid.major.x = element_blank()) +
+  theme(axis.text.x = element_text(face = "bold", size = 6)) +
+  theme(panel.background = element_rect(fill = "#EFEFFA")) +
+  xlab("Product Line") +
+  scale_fill_brewer(palette = "Set2") +
+  scale_y_continuous(breaks = seq(0, 400, 50)) +
+  scale_x_discrete(labels = c("Clothing", "Electronics", "Food and\nbeverages", "Health and\nbeauty", "Home and\nlifestyle", "Sports and\ntravel"))
+
+prod_bar
+```
+# Compare the distributions of revenue and quantity
+```{r}
+revenue <- gce_trial$Revenue
+quantity <- gce_trial$Quantity
+
+par(mfrow = c(1, 2))
+hist(revenue, breaks = 10)
+hist(quantity, breaks = 10)
+```
+# Compare quantity sold per product line and branch in a facet wrap
+```{r}
+prod_wrap <- ggplot(qty_sum) +
+  geom_bar(aes(Branch, Quantity, fill = Branch), color = "black", position = "dodge", stat = "identity") + 
+  facet_wrap(~ ProductLine) +
+  
+  # Formatting
+  ggtitle("Quantity Sold for Each Product Line") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid.major.x = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  theme(axis.ticks.x = element_blank()) +
+  xlab("") +
+  scale_fill_brewer(palette = "Set2")
+
+prod_wrap
+```
+# Compare customer return status by product line and branch
+```{r}
+prod_grid <- ggplot(qty_sum) +
+  geom_bar(aes(ProductLine, Quantity, fill = ProductLine), color = "black", stat = "identity") + 
+  facet_grid(CustReturned ~ Branch, switch = "both") +
+
+  # Formatting
+  ggtitle("Quantity Sold for Returning vs. Non-Returning Customers") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid.major.x = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  theme(axis.ticks.x = element_blank()) +
+  xlab("") +
+  scale_fill_brewer(palette = "Set2")
+  
+prod_grid
+```
+# Convert the data frame to a long format
+```{r}
+library(tidyr)
+
+long_df <- gce_trial %>% pivot_longer(c(CustRating, UnitPrice, Revenue), names_to = "VarNames", values_to = "VarVals")
+
+long_df
+```
+# Compare income correlations with rating, revenue, and price
+```{r}
+sctr_wrap <- ggplot(long_df) +
+  geom_point(aes(VarVals, GrossIncome, color = Quantity)) +
+  facet_wrap(~ VarNames, scales = "free_x") + 
+  
+  # Formatting
+  ggtitle("Correlations with Gross Income") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  xlab("") +
+  ylab("Gross Income (USD)") +
+  scale_color_distiller(palette = "Blues", direction = 1)
+
+sctr_wrap
+```

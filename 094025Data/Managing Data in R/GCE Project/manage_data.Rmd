@@ -1,0 +1,195 @@
+---
+title: "Managing Data in R"
+output: html_notebook
+---
+
+# Load the customer and store data
+```{r}
+
+
+```
+# Load more customer and store data
+```{r}
+
+
+
+
+```
+# Load the financial data for the transactions
+```{r}
+
+
+```
+# Load the customer ratings data
+```{r}
+
+
+```
+# Load the remaining data for the last six transactions
+```{r}
+
+
+```
+# Convert categorical columns to factors
+```{r}
+
+
+
+
+
+
+```
+# Save the converted data frame as a text file
+```{r}
+
+```
+# Save the converted data frame as a binary file
+```{r}
+
+```
+# Append transaction rows to an overall data frame
+```{r}
+
+
+```
+# Add multiple columns to the new data frame
+```{r}
+
+
+```
+# Add a single column to the new data frame
+```{r}
+
+
+```
+# Transpose and data so it's in a more common format
+```{r}
+
+
+```
+# Convert relevant columns to integer or numeric type
+```{r}
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+# Move transposed row names into a column, then append the rows
+```{r}
+
+
+
+
+
+```
+# Sort the customer ratings
+```{r}
+
+
+```
+# Sort the entire data frame by customer rating
+```{r}
+
+
+```
+# Load dplyr into R
+```{r}
+
+```
+# Load a data file of customer return status
+```{r}
+
+
+```
+# Perform a left outer join to merge the return status data
+```{r}
+
+
+```
+# Verify the merge worked as expected
+```{r}
+
+
+```
+# Rename columns related to customer details
+```{r}
+
+
+
+
+```
+# Get all customer-based column data
+```{r}
+
+```
+# Generate new columns for revenue and gross income
+```{r}
+
+
+
+```
+# Retrieve all transactions where income margins are less than 2%
+```{r}
+
+```
+# Identify purchases that qualify for the clothing deal
+```{r}
+
+
+
+
+```
+# Sort the data by customer rating, gender, and membership
+```{r}
+
+```
+# Get the mean customer rating for males and females
+```{r}
+
+
+```
+# Get the highest single-transaction revenue from each branch
+```{r}
+
+```
+# Create a new column to hold both the date and the time
+```{r}
+
+
+
+```
+# Convert the DateTime column to the proper data type
+```{r}
+
+
+
+```
+# Load the lubridate package
+```{r}
+
+```
+# Get all transactions from February
+```{r}
+
+```
+# Get purchases made on February 12th by gender and product line
+```{r}
+
+```
+# Get the mean revenue of transactions for each day of the week
+```{r}
+
+```
+# Get the mean customer age for morning shoppers vs. the rest of the day
+```{r}
+
+```

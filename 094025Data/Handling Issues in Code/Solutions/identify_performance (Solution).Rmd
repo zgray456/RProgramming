@@ -1,0 +1,38 @@
+---
+title: "Identifying Performance Issues"
+output: html_notebook
+---
+
+# Define a function that randomly generates millions of data points
+```{r}
+gen_prc_qty <- function() {
+  unit_price <- round(rnorm(10 ** 8, 45, 20), 2)
+  quantity <- sample(1:10, 10 ** 8, replace = TRUE)
+  sales_df <- data.frame(UnitPrice = unit_price, Quantity = quantity)
+  
+  return(sales_df)
+}
+```
+# Define a function that performs calculations on millions of data points
+```{r}
+calc_rev <- function() {
+  sales_df <- gen_prc_qty()
+  sales_df$Revenue <- sales_df$UnitPrice * sales_df$Quantity
+  
+  return(sales_df)
+}
+```
+# Time the calc_rev() function
+```{r}
+system.time(calc_rev())
+```
+# Profile the calc_rev() function
+```{r}
+Rprof()
+sales_df <- calc_rev()
+Rprof(NULL)
+```
+# Analyze the profile data
+```{r}
+summaryRprof("Rprof.out")
+```

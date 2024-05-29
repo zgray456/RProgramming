@@ -1,0 +1,123 @@
+---
+title: "Structuring Code for Reuse"
+output: html_notebook
+---
+
+# Define the sales transaction data
+```{r}
+sales_df <- data.frame(UnitPrice = c(87.67, 20.01, 30.14, 83.24, 98.98),
+                       Quantity = c(2L, 9L, 10L, 9L, 10L),
+                       COGS = c(170.12, 174.55, 284.76, 709.60, 955.90),
+                       CustomerType = factor(c("N", "M", "M", "N", "N")))
+sales_df
+```
+# Define a function to print all values from a column
+```{r}
+print_col_vals <- function(x) {
+  for (i in x) {
+    print(i)
+  }
+}
+```
+# Call the function to print all values from a column
+```{r}
+print_col_vals(sales_df$UnitPrice)
+```
+# Define a function to obtain revenue with the membership discount applied
+```{r}
+get_rev <- function(df, price, quant, type) {
+  revenue <- 0
+  
+  for (i in 1:nrow(df)) {
+    if (df[i, type] == "M") {
+      calc_price <- df[i, price] * 0.95
+    } else {
+      calc_price <- df[i, price]
+    }
+    
+    revenue[i] <- round(calc_price * df[i, quant], digits = 2)
+  }
+  
+  return(revenue)
+}
+```
+# Call the function to obtain revenue
+```{r}
+get_rev(sales_df, "UnitPrice", "Quantity", "CustomerType")
+```
+# Define a function to obtain gross income
+```{r}
+get_inc <- function(df, ..., cogs) {
+  revenue <- get_rev(df, ...)
+  
+  income <- revenue - df[cogs]
+  
+  colnames(income) <- "GrossIncome"
+  
+  return(income)
+}
+```
+# Call the function to obtain gross income
+```{r}
+get_inc(sales_df, "UnitPrice", "Quantity", "CustomerType", cogs = "COGS")
+```
+# Get a list of max values for each numeric variable
+```{r}
+lapply(sales_df[1:3], max)
+```
+# Get a simplified vector of max values for each numeric variable
+```{r}
+sapply(sales_df[1:3], max)
+```
+# Get the highest unit price for members and non-members
+```{r}
+tapply(sales_df$UnitPrice, sales_df$CustomerType, max)
+```
+# Get the floor of the minimum values for both monetary variables
+```{r}
+sapply(sales_df[c("UnitPrice", "COGS")], function(x) { floor(min(x)) })
+```
+# Define the customer sentiment data
+```{r}
+cust_df <- data.frame(ProdScores = c(5.7, 7.2, 8.9, 4.0, 6.1, 6.1),
+                      ServScores = c(9.2, 4.0, 4.0, 4.5, 8.9, 5.2),
+                      Return = factor(c("Yes", "No", "No",
+                                        "Yes", "Yes", "Yes")))
+cust_df
+```
+# Get the average of both scores for each customer
+```{r}
+apply(cust_df[1:2], 1, mean)
+```
+# Generate a new data frame of random product and customer service scores
+```{r}
+rand_scores <- mapply(runif, 5, c(1.0, 4.0), 10.0)
+rand_scores <- as.data.frame(round(rand_scores, digits = 1))
+colnames(rand_scores) <- colnames(cust_df[1:2])
+rand_scores
+```
+# Identify the paths to your R library
+```{r}
+.libPaths()
+```
+# Identify the packages currently loaded in the R session
+```{r}
+search()
+```
+# Download and install the tidyverse collection
+```{r}
+install.packages("tidyverse")
+```
+# Load the dplyr package from tidyverse
+```{r}
+library(dplyr)
+search()
+```
+# Use a function from the dplyr package
+```{r}
+filter(sales_df, Quantity == 9)
+```
+# Reference a function with the same name from the stats package
+```{r}
+?stats::filter
+```

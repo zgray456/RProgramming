@@ -1,0 +1,104 @@
+---
+title: "Analyzing Data in R"
+output: html_notebook
+---
+
+# Load the dataset
+```{r}
+load("../data/gce_trial.rda")
+gce_trial
+```
+# Review the data types of each feature
+```{r}
+feature_classes <- sapply(gce_trial, class)
+feature_classes
+```
+# Convert the feature to a more appropriate data type
+```{r}
+gce_trial$CustReturned <- factor(gce_trial$CustReturned)
+class(gce_trial$CustReturned)
+```
+# Identify correlations between the numeric variables
+```{r}
+library(dplyr)
+
+is_num <- gce_trial %>% sapply(is.numeric) 
+num_features <- gce_trial %>% select(which(is_num))
+as.data.frame(cor(num_features, use = "complete.obs"))
+```
+# Generate summary statistics
+```{r}
+summary(gce_trial)
+```
+# Generate standard deviation measurements
+```{r}
+num_features %>% lapply(sd, na.rm = TRUE)
+```
+# Install and load the moments package
+```{r}
+install.packages("moments")
+library(moments)
+```
+# Generate skewness measurements
+```{r}
+num_features %>% lapply(skewness, na.rm = TRUE)
+```
+# Generate kurtosis measurements
+```{r}
+num_features %>% lapply(kurtosis, na.rm = TRUE)
+```
+# Get the top revenue of each branch, not including missing values
+```{r}
+gce_trial %>% group_by(Branch) %>% summarize(TopRevenue = max(Revenue, na.rm = TRUE))
+```
+# Identify missing revenue values
+```{r}
+gce_trial %>% filter(is.na(Revenue)) %>% select(InvoiceID, Revenue)
+```
+# Get all rows with missing values
+```{r}
+miss_rows <- gce_trial %>% filter(!complete.cases(.)) %>% select(InvoiceID)
+miss_rows <- as.vector(miss_rows$InvoiceID)
+miss_cols <- gce_trial %>% select(InvoiceID, function(x) any(is.na(x))) %>% colnames()
+
+missing <- function() {
+  gce_trial %>% filter(InvoiceID %in% miss_rows) %>% select(miss_cols)
+}
+
+missing()
+```
+# Fill in the missing gender values
+```{r}
+gce_trial$CustGender[is.na(gce_trial$CustGender)] <- "Male"
+missing()
+```
+# Fill in the missing quantity values
+```{r}
+gce_trial$Quantity[is.na(gce_trial$Quantity)] <- c(4L, 3L)
+missing()
+```
+# Identify rows with erroneous quantities
+```{r}
+gce_trial %>% filter(Quantity < 1) %>% select(InvoiceID, Quantity)
+```
+# Drop rows with erroneous quantities
+```{r}
+gce_trial <- gce_trial %>% filter(Quantity > 0)
+gce_trial %>% filter(Quantity < 1)
+```
+# Impute the missing COGS values
+```{r}
+prct_dif <- gce_trial$COGS / gce_trial$Revenue
+mean_dif <- mean(prct_dif, na.rm = TRUE)
+calc_vals <- gce_trial %>% filter(is.na(COGS)) %>% select(UnitPrice, Quantity)
+imp_cogs <- calc_vals$UnitPrice * calc_vals$Quantity * mean_dif
+
+gce_trial$COGS[is.na(gce_trial$COGS)] <- round(imp_cogs, 2)
+missing()
+```
+# Recalculate revenue and gross income
+```{r}
+gce_trial$Revenue <- gce_trial$UnitPrice * gce_trial$Quantity
+gce_trial$GrossIncome <- gce_trial$Revenue - gce_trial$COGS
+missing()
+```

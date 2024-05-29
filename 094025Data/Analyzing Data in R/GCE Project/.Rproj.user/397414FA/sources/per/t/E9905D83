@@ -1,0 +1,25 @@
+{
+    "id": "E9905D83",
+    "path": "C:/094025Data/Analyzing Data in R/GCE Project/analyze_data.Rmd",
+    "project_path": "analyze_data.Rmd",
+    "type": "r_markdown",
+    "hash": "1042717080",
+    "contents": "",
+    "dirty": false,
+    "created": 1642446689793.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1642446593,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1642446593,
+    "read_only": false,
+    "read_only_alternatives": []
+}

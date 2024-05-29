@@ -1,0 +1,26 @@
+---SNIPPET 1---
+
+  for (i in 1:rows) {
+    if (i == 1) {
+      new_vals[i] <- df[rows, col] * 2  # Roll over last row to top
+    } else {
+      new_vals[i] <- df[i - 1, col] * 2
+    }
+  }
+
+
+---SNIPPET 2---
+
+  # Make sure mean operation can be performed on all input columns
+  mean_df <- tryCatch(data.frame(Mean = sapply(shftdbl_df, mean)),
+                      warning = function(w) {
+			# Inform user of workaround
+                        message("Ignoring non-numeric columns")
+                        
+                        numer_cols <- sapply(shftdbl_df, is.numeric)
+                        shftdbl_df <- shftdbl_df[, numer_cols]
+                        
+                        data.frame(Mean = sapply(shftdbl_df, mean))
+                      },
+                      finally = message("Outputting list with $Data and $Means")
+  )

@@ -1,0 +1,194 @@
+---
+title: "Managing Data in R"
+output: html_notebook
+---
+
+# Load the customer and store data
+```{r}
+cust_store_data <- read.csv("../data/cust_store_data.csv", na.strings = "")
+cust_store_data
+```
+# Load more customer and store data
+```{r}
+cust_store_data_more <- read.table("../data/cust_store_data_more.txt",
+                                   sep = ";", header = TRUE, na.strings = "")
+cust_store_data_more
+```
+# Load the financial data for the transactions
+```{r}
+financials <- dget(file = "../data/financials.R")
+financials
+```
+# Load the customer ratings data
+```{r}
+load("../data/ratings.rda")
+ratings
+```
+# Load the remaining data for the last six transactions
+```{r}
+last_transactions <- readRDS("../data/remaining_data.rda")
+last_transactions
+```
+# Convert categorical columns to factors
+```{r}
+categ_cols <- c("Gender", "Type", "Branch", "ProductLine")
+
+for (col in categ_cols) {
+  cust_store_data[[col]] <- factor(cust_store_data[[col]])
+}
+cust_store_data
+```
+# Save the converted data frame as a text file
+```{r}
+write.csv(cust_store_data, "factorized_data.csv")
+```
+# Save the converted data frame as a binary file
+```{r}
+saveRDS(cust_store_data, "factorized_data.rda")
+```
+# Append transaction rows to an overall data frame
+```{r}
+gce_trial <- rbind(cust_store_data, cust_store_data_more)
+gce_trial
+```
+# Add multiple columns to the new data frame
+```{r}
+gce_trial <- cbind(gce_trial, financials[c("UnitPrice", "Quantity", "COGS")])
+gce_trial
+```
+# Add a single column to the new data frame
+```{r}
+gce_trial$CustomerRating <- ratings$CustomerRating
+gce_trial
+```
+# Transpose and data so it's in a more common format
+```{r}
+tposed_df <- as.data.frame(t(last_transactions))
+tposed_df
+```
+# Convert relevant columns to integer or numeric type
+```{r}
+int_cols <- c("Age", "Quantity")
+num_cols <- c("UnitPrice", "COGS", "CustomerRating")
+
+for (col in int_cols) {
+  tposed_df[[col]] <- as.integer(tposed_df[[col]])
+}
+
+for (col in num_cols) {
+  tposed_df[[col]] <- as.numeric(tposed_df[[col]])
+}
+
+tposed_df
+```
+
+# Move transposed row names into a column, then append the rows
+```{r}
+new_tposed_df <- tposed_df
+new_tposed_df$InvoiceID <- rownames(tposed_df)
+rownames(new_tposed_df) <- NULL
+gce_trial <- rbind(gce_trial, new_tposed_df)
+gce_trial
+```
+# Sort the customer ratings
+```{r}
+ratings_sort <- sort(gce_trial$CustomerRating)
+ratings_sort[1:50]
+```
+# Sort the entire data frame by customer rating
+```{r}
+ratings_order <- order(gce_trial$CustomerRating, decreasing = TRUE)
+gce_trial[ratings_order, ]
+```
+# Load dplyr into R
+```{r}
+library(dplyr)
+```
+# Load a data file of customer return status
+```{r}
+return_status <- read.csv("../data/return_status.csv")
+return_status
+```
+# Perform a left outer join to merge the return status data
+```{r}
+gce_trial <- left_join(gce_trial, return_status, by = "InvoiceID")
+gce_trial
+```
+# Verify the merge worked as expected
+```{r}
+match <- filter(gce_trial, InvoiceID == "GRC-HBE-001")
+select(match, c(InvoiceID, Returned))
+```
+# Rename columns related to customer details
+```{r}
+gce_trial <- rename(gce_trial, CustName = Name, CustGender = Gender,
+                    CustAge = Age, CustType = Type,
+                    CustRating = CustomerRating, CustReturned = Returned)
+gce_trial
+```
+# Get all customer-based column data
+```{r}
+gce_trial %>% select(starts_with("Cust"))
+```
+# Generate new columns for revenue and gross income
+```{r}
+gce_trial <- gce_trial %>% mutate(Revenue = UnitPrice * Quantity)
+gce_trial <- gce_trial %>% mutate(GrossIncome = Revenue - COGS)
+gce_trial
+```
+# Retrieve all transactions where income margins are less than 2%
+```{r}
+gce_trial %>% filter(GrossIncome / Revenue < 0.02) %>% select(Branch, COGS, Revenue, GrossIncome)
+```
+# Identify purchases that qualify for the clothing deal
+```{r}
+gce_trial %>% filter(Branch == "Carbon Creek"
+                     & CustType == "Member"
+                     & ProductLine == "Clothing"
+                     & UnitPrice >= 75)
+```
+# Sort the data by customer rating, gender, and membership
+```{r}
+gce_trial %>% arrange(desc(CustRating), CustGender, CustType)
+```
+# Get the mean customer rating for males and females
+```{r}
+gender_grp <- gce_trial %>% group_by(CustGender)
+gender_grp %>% summarize(MeanCustRating = mean(CustRating))
+```
+# Get the highest single-transaction revenue from each branch
+```{r}
+gce_trial %>% group_by(Branch) %>% summarize(TopRevenue = max(Revenue))
+```
+# Create a new column to hold both the date and the time
+```{r}
+gce_trial <- gce_trial %>% group_by(Date, Time) %>% mutate(DateTime = paste(Date, Time)) %>% ungroup(Date, Time) %>% select(!c(Date, Time)) %>% relocate(DateTime, .after = InvoiceID)
+
+gce_trial
+```
+# Convert the DateTime column to the proper data type
+```{r}
+dt_vals <- as.POSIXct(gce_trial$DateTime, format = "%m/%d/%Y %H:%M:%S")
+gce_trial$DateTime <- dt_vals
+gce_trial
+```
+# Load the lubridate package
+```{r}
+library(lubridate)
+```
+# Get all transactions from February
+```{r}
+gce_trial %>% filter(month(DateTime) == 2)
+```
+# Get purchases made on February 12th by gender and product line
+```{r}
+gce_trial %>% filter(month(DateTime) == 2 & mday(DateTime) == 12) %>% arrange(CustGender, ProductLine) %>% select(CustGender, ProductLine)
+```
+# Get the mean revenue of transactions for each day of the week
+```{r}
+gce_trial %>% group_by(wday(DateTime)) %>% summarize(MeanRev = mean(Revenue))
+```
+# Get the mean customer age for morning shoppers vs. the rest of the day
+```{r}
+gce_trial %>% mutate(AM = hour(DateTime) >= 8 & hour(DateTime) < 12) %>% group_by(AM) %>% summarize(MeanAge = mean(CustAge))
+```

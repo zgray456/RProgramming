@@ -1,0 +1,891 @@
+InvoiceID,Date,Time,Name,Gender,Age,Type,Branch,ProductLine
+CAR-CLO-001,3/10/2021,21:31:14,Rebbecca Stein,Female,25,Normal,Carbon Creek,Clothing
+CAR-CLO-002,1/12/2021,8:32:31,Sonja Richard,Female,33,Member,Carbon Creek,Clothing
+CAR-CLO-003,2/10/2021,16:51:06,Alma Blackwell,Female,39,Member,Carbon Creek,Clothing
+CAR-CLO-004,1/29/2021,8:37:43,Todd McGill,Male,64,Normal,Carbon Creek,Clothing
+CAR-CLO-005,2/8/2021,10:37:01,Lloyd Burt,Male,19,Normal,Carbon Creek,Clothing
+CAR-CLO-006,1/11/2021,12:35:09,Guy Bryan,Male,55,Normal,Carbon Creek,Clothing
+CAR-CLO-007,1/23/2021,20:21:20,Jose Phelps,Male,73,Member,Carbon Creek,Clothing
+CAR-CLO-008,3/5/2021,17:14:05,Sheryl Hill,Female,86,Normal,Carbon Creek,Clothing
+CAR-CLO-009,3/8/2021,11:09:41,Sherri Reynolds,Female,20,Normal,Carbon Creek,Clothing
+CAR-CLO-010,2/3/2021,17:12:52,Gerardo McBride,Male,81,Normal,Carbon Creek,Clothing
+CAR-CLO-011,3/19/2021,10:38:29,Blake Case,Male,74,Normal,Carbon Creek,Clothing
+CAR-CLO-012,2/27/2021,10:04:04,Valerie Hampton,Female,40,Normal,Carbon Creek,Clothing
+CAR-CLO-013,1/14/2021,10:38:42,Joanna McDaniel,Female,53,Member,Carbon Creek,Clothing
+CAR-CLO-014,2/2/2021,20:28:02,Evan Stanton,Male,57,Member,Carbon Creek,Clothing
+CAR-CLO-015,3/23/2021,10:03:31,Wesley Hale,Male,78,Normal,Carbon Creek,Clothing
+CAR-CLO-016,3/15/2021,19:18:53,Juanita Lynn,Female,18,Member,Carbon Creek,Clothing
+CAR-CLO-017,1/27/2021,12:43:00,Stefanie Woodard,Female,39,Normal,Carbon Creek,Clothing
+CAR-CLO-018,1/24/2021,20:15:57,Eugene Jackson,Male,27,Member,Carbon Creek,Clothing
+CAR-CLO-019,2/25/2021,9:01:06,Caroline Berry,Female,52,Normal,Carbon Creek,Clothing
+CAR-CLO-020,1/12/2021,12:04:15,Dena Shaw,Female,23,Normal,Carbon Creek,Clothing
+CAR-CLO-021,1/1/2021,13:08:06,Janice Mann,Female,79,Normal,Carbon Creek,Clothing
+CAR-CLO-022,2/10/2021,9:02:43,Roberta Day,Female,86,Member,Carbon Creek,Clothing
+CAR-CLO-023,1/23/2021,20:48:04,Theodore Buchanan,Male,73,Normal,Carbon Creek,Clothing
+CAR-CLO-024,1/26/2021,18:34:59,Heather Bruce,Female,75,Normal,Carbon Creek,Clothing
+CAR-CLO-025,1/18/2021,13:08:24,Norma Dudley,Female,75,Member,Carbon Creek,Clothing
+CAR-CLO-026,2/26/2021,9:13:33,Julius Gillespie,Male,36,Member,Carbon Creek,Clothing
+CAR-CLO-027,2/4/2021,13:52:53,Jennifer Evans,Female,62,Normal,Carbon Creek,Clothing
+CAR-CLO-028,1/14/2021,21:48:10,Ira Albright,Male,72,Member,Carbon Creek,Clothing
+CAR-CLO-029,2/27/2021,11:44:22,Marvin Cunningham,Male,53,Member,Carbon Creek,Clothing
+CAR-CLO-030,3/28/2021,9:04:38,Barb Ward,Female,46,Member,Carbon Creek,Clothing
+CAR-CLO-031,2/17/2021,9:22:53,Taylor Sims,Male,21,Normal,Carbon Creek,Clothing
+CAR-CLO-032,3/1/2021,18:51:04,Karen Dominguez,Female,62,Member,Carbon Creek,Clothing
+CAR-CLO-033,2/8/2021,18:04:44,Emmanuel Emerson,Male,43,Member,Carbon Creek,Clothing
+CAR-CLO-034,3/9/2021,16:31:53,Kay Vazquez,Female,82,Normal,Carbon Creek,Clothing
+CAR-CLO-035,1/20/2021,20:06:41,Sandi Parsons,Female,70,Member,Carbon Creek,Clothing
+CAR-CLO-036,2/5/2021,11:52:24,Shelia Barnett,Female,43,Member,Carbon Creek,Clothing
+CAR-CLO-037,3/3/2021,12:39:45,Lucas Lindsey,Male,27,Normal,Carbon Creek,Clothing
+CAR-CLO-038,3/4/2021,12:20:11,Naomi Sellers,Female,55,Member,Carbon Creek,Clothing
+CAR-CLO-039,3/26/2021,8:09:43,Norman Smith,Male,44,Member,Carbon Creek,Clothing
+CAR-CLO-040,3/26/2021,16:10:31,Roberto McKay,Male,52,Normal,Carbon Creek,Clothing
+CAR-CLO-041,1/9/2021,20:46:08,Julio Kim,Male,23,Member,Carbon Creek,Clothing
+CAR-CLO-042,2/15/2021,18:06:41,Luther Barry,Male,19,Normal,Carbon Creek,Clothing
+CAR-CLO-043,1/26/2021,12:01:31,Keith Holder,Male,65,Normal,Carbon Creek,Clothing
+CAR-CLO-044,1/19/2021,18:27:22,Ginger Holmes,Female,23,Normal,Carbon Creek,Clothing
+CAR-CLO-045,1/25/2021,18:45:37,Greg Gould,Male,82,Normal,Carbon Creek,Clothing
+CAR-CLO-046,2/19/2021,9:27:40,Jeannette Montoya,Female,71,Normal,Carbon Creek,Clothing
+CAR-CLO-047,1/31/2021,9:09:45,Erick Ayers,Male,21,Member,Carbon Creek,Clothing
+CAR-CLO-048,3/11/2021,12:05:27,Lourdes Briggs,Female,29,Normal,Carbon Creek,Clothing
+CAR-CLO-049,1/6/2021,19:05:11,Joni Bowman,Female,31,Normal,Carbon Creek,Clothing
+CAR-CLO-050,3/19/2021,13:23:22,Alice Kline,Female,68,Normal,Carbon Creek,Clothing
+CAR-CLO-051,2/18/2021,14:16:08,Lucinda Kellogg,Female,59,Member,Carbon Creek,Clothing
+CAR-ELE-001,2/25/2021,21:52:13,Patty Miner,Female,25,Member,Carbon Creek,Electronics
+CAR-ELE-002,2/12/2021,19:07:51,Lorraine Best,Female,79,Normal,Carbon Creek,Electronics
+CAR-ELE-003,2/17/2021,20:56:23,Mathew Shelton,Male,66,Normal,Carbon Creek,Electronics
+CAR-ELE-004,1/15/2021,13:43:13,Abigail Lucas,Female,64,Normal,Carbon Creek,Electronics
+CAR-ELE-005,3/8/2021,18:36:15,Simon Holcomb,Male,38,Normal,Carbon Creek,Electronics
+CAR-ELE-006,1/12/2021,8:03:59,Lee Ingram,Male,44,Member,Carbon Creek,Electronics
+CAR-ELE-007,2/14/2021,16:54:17,Robyn Conner,Female,32,Normal,Carbon Creek,Electronics
+CAR-ELE-008,1/18/2021,8:09:28,Paige Hinton,Female,69,Normal,Carbon Creek,Electronics
+CAR-ELE-009,3/19/2021,21:23:18,Alexander Porter,Male,24,Normal,Carbon Creek,Electronics
+CAR-ELE-010,1/25/2021,18:08:43,Gilberto Bates,Male,34,Normal,Carbon Creek,Electronics
+CAR-ELE-011,2/21/2021,9:44:18,Renee Gibson,Female,75,Member,Carbon Creek,Electronics
+CAR-ELE-012,1/7/2021,18:40:46,Donnie Anderson,Male,77,Member,Carbon Creek,Electronics
+CAR-ELE-013,1/31/2021,9:52:48,Stan Beasley,Male,48,Member,Carbon Creek,Electronics
+CAR-ELE-014,2/13/2021,18:06:52,Darryl Nunez,Male,85,Member,Carbon Creek,Electronics
+CAR-ELE-015,3/19/2021,19:20:49,Guadalupe Garner,Female,32,Normal,Carbon Creek,Electronics
+CAR-ELE-016,2/18/2021,10:50:59,Meredith Schroeder,Female,90,Member,Carbon Creek,Electronics
+CAR-ELE-017,3/18/2021,13:45:26,Amber Skinner,Female,19,Normal,Carbon Creek,Electronics
+CAR-ELE-018,3/26/2021,19:35:25,Dennis Griffith,Male,67,Member,Carbon Creek,Electronics
+CAR-ELE-019,3/21/2021,10:40:11,Danielle Macias,Female,44,Member,Carbon Creek,Electronics
+CAR-ELE-020,3/25/2021,16:32:12,Tomas Gilbert,Male,60,Member,Carbon Creek,Electronics
+CAR-ELE-021,3/21/2021,13:48:07,Andrea Clark,Female,19,Member,Carbon Creek,Electronics
+CAR-ELE-022,2/4/2021,14:05:52,Jim Gill,Male,43,Member,Carbon Creek,Electronics
+CAR-ELE-023,3/28/2021,10:20:49,Marty Lyon,Male,56,Normal,Carbon Creek,Electronics
+CAR-ELE-024,1/26/2021,11:46:44,Vince Starr,Male,89,Normal,Carbon Creek,Electronics
+CAR-ELE-025,3/6/2021,12:25:09,Jerry John,Male,26,Member,Carbon Creek,Electronics
+CAR-ELE-026,2/13/2021,16:34:56,Abel Rose,Male,18,Member,Carbon Creek,Electronics
+CAR-ELE-027,2/4/2021,12:55:08,Sara Cordova,Female,27,Member,Carbon Creek,Electronics
+CAR-ELE-028,1/13/2021,13:43:53,Louise Cooley,Female,36,Normal,Carbon Creek,Electronics
+CAR-ELE-029,1/31/2021,8:16:21,Jared Maxwell,Male,68,Member,Carbon Creek,Electronics
+CAR-ELE-030,3/30/2021,8:44:06,Leticia Walters,Female,39,Member,Carbon Creek,Electronics
+CAR-ELE-031,1/29/2021,20:04:18,Bobby Dale,Male,22,Normal,Carbon Creek,Electronics
+CAR-ELE-032,1/28/2021,16:10:34,Myron Hester,Male,26,Member,Carbon Creek,Electronics
+CAR-ELE-033,3/14/2021,21:45:58,Joe Richmond,Male,25,Normal,Carbon Creek,Electronics
+CAR-ELE-034,1/23/2021,16:04:44,Tanya Farmer,Female,56,Normal,Carbon Creek,Electronics
+CAR-ELE-035,3/25/2021,10:29:31,Mark Drake,Male,34,Member,Carbon Creek,Electronics
+CAR-ELE-036,3/20/2021,14:47:20,Daryl Crosby,Male,45,Member,Carbon Creek,Electronics
+CAR-ELE-037,2/7/2021,12:49:51,Debra Yu,Female,22,Normal,Carbon Creek,Electronics
+CAR-ELE-038,3/5/2021,13:05:26,Raul Hyde,Male,45,Normal,Carbon Creek,Electronics
+CAR-ELE-039,3/14/2021,9:53:14,Julia Reeves,Female,43,Normal,Carbon Creek,Electronics
+CAR-ELE-040,3/1/2021,21:11:15,Lou Oleson,Female,64,Normal,Carbon Creek,Electronics
+CAR-ELE-041,2/19/2021,13:03:48,Craig Gross,Male,53,Member,Carbon Creek,Electronics
+CAR-ELE-042,1/19/2021,16:05:20,Roderick Glover,Male,50,Member,Carbon Creek,Electronics
+CAR-ELE-043,2/22/2021,19:32:31,Kathryn Campbell,Female,37,Member,Carbon Creek,Electronics
+CAR-ELE-044,2/4/2021,9:36:18,Cory Hill,Male,86,Normal,Carbon Creek,Electronics
+CAR-ELE-045,2/27/2021,15:22:58,Rex Cowan,Male,48,Member,Carbon Creek,Electronics
+CAR-ELE-046,2/26/2021,20:37:09,Elaine Pike,Female,48,Normal,Carbon Creek,Electronics
+CAR-ELE-047,1/8/2021,21:28:47,Judith Cochran,Female,79,Normal,Carbon Creek,Electronics
+CAR-ELE-048,2/24/2021,21:37:58,Teresa Haines,Female,28,Normal,Carbon Creek,Electronics
+CAR-ELE-049,3/22/2021,21:53:04,Douglas Abbott,Male,52,Normal,Carbon Creek,Electronics
+CAR-ELE-050,1/24/2021,18:30:24,Candice Caldwell,Female,43,Member,Carbon Creek,Electronics
+CAR-ELE-051,1/1/2021,21:39:02,Amanda Medina,Female,83,Member,Carbon Creek,Electronics
+CAR-ELE-052,1/24/2021,19:37:27,Nicholas Simons,Male,30,Normal,Carbon Creek,Electronics
+CAR-ELE-053,1/30/2021,14:13:54,Bennie Proctor,Male,84,Member,Carbon Creek,Electronics
+CAR-ELE-054,1/27/2021,21:07:20,Blake Valencia,Male,18,Member,Carbon Creek,Electronics
+CAR-ELE-055,1/8/2021,18:40:53,Kelsey McGrath,Female,56,Member,Carbon Creek,Electronics
+CAR-ELE-056,3/21/2021,15:13:03,Colleen Beach,Female,64,Normal,Carbon Creek,Electronics
+CAR-ELE-057,3/23/2021,14:33:40,Lillie Peck,Female,24,Member,Carbon Creek,Electronics
+CAR-ELE-058,1/5/2021,11:32:01,Rose Callahan,Female,47,Normal,Carbon Creek,Electronics
+CAR-ELE-059,2/5/2021,19:44:24,Dustin Barton,Male,22,Member,Carbon Creek,Electronics
+CAR-ELE-060,3/10/2021,18:58:05,Derek Sharp,Male,27,Normal,Carbon Creek,Electronics
+CAR-FBV-001,2/7/2021,8:33:31,Edwin Cherry,Male,68,Normal,Carbon Creek,Food and beverages
+CAR-FBV-002,1/21/2021,9:13:57,Julio Hurley,Male,35,Normal,Carbon Creek,Food and beverages
+CAR-FBV-003,2/10/2021,11:55:17,Mae Higgins,Female,43,Member,Carbon Creek,Food and beverages
+CAR-FBV-004,3/27/2021,21:05:13,Patrick Scott,Male,57,Member,Carbon Creek,Food and beverages
+CAR-FBV-005,3/23/2021,18:03:47,Malcolm Hoover,Male,46,Normal,Carbon Creek,Food and beverages
+CAR-FBV-006,3/28/2021,19:10:10,Adrian Schneider,Male,53,Normal,Carbon Creek,Food and beverages
+CAR-FBV-007,2/2/2021,19:15:12,Marisa Frey,Female,36,Normal,Carbon Creek,Food and beverages
+CAR-FBV-008,2/20/2021,11:19:29,Hal Kirby,Male,29,Member,Carbon Creek,Food and beverages
+CAR-FBV-009,3/13/2021,21:31:44,Chris Osborne,Male,47,Normal,Carbon Creek,Food and beverages
+CAR-FBV-010,1/19/2021,10:29:44,Marcus Burns,Male,35,Normal,Carbon Creek,Food and beverages
+CAR-FBV-011,3/3/2021,13:31:30,Frederick Greer,Male,63,Member,Carbon Creek,Food and beverages
+CAR-FBV-012,3/23/2021,11:58:19,Clifford Powers,Male,50,Normal,Carbon Creek,Food and beverages
+CAR-FBV-013,3/20/2021,9:33:27,Stan Mueller,Male,72,Normal,Carbon Creek,Food and beverages
+CAR-FBV-014,1/11/2021,12:13:27,Vince Doty,Male,82,Normal,Carbon Creek,Food and beverages
+CAR-FBV-015,1/21/2021,8:06:20,Virginia Andrade,Female,54,Member,Carbon Creek,Food and beverages
+CAR-FBV-016,2/1/2021,11:07:55,Judy Goodwin,Female,25,Member,Carbon Creek,Food and beverages
+CAR-FBV-017,3/9/2021,13:20:18,Corey Garcia,Male,26,Member,Carbon Creek,Food and beverages
+CAR-FBV-018,2/17/2021,12:06:35,Lonnie Watts,Male,29,Normal,Carbon Creek,Food and beverages
+CAR-FBV-019,3/14/2021,19:09:46,Clyde Zhang,Male,47,Member,Carbon Creek,Food and beverages
+CAR-FBV-020,2/17/2021,9:00:29,Stuart Joyce,Male,42,Member,Carbon Creek,Food and beverages
+CAR-FBV-021,1/6/2021,11:43:07,Shelley Sheridan,Female,43,Normal,Carbon Creek,Food and beverages
+CAR-FBV-022,3/13/2021,15:44:59,Rachael Olson,Female,32,Normal,Carbon Creek,Food and beverages
+CAR-FBV-023,1/11/2021,16:02:07,Eric Davidson,Male,30,Normal,Carbon Creek,Food and beverages
+CAR-FBV-024,3/16/2021,14:59:12,Faye Weiss,Female,65,Normal,Carbon Creek,Food and beverages
+CAR-FBV-025,3/28/2021,20:54:45,Clark Atkinson,Male,31,Member,Carbon Creek,Food and beverages
+CAR-FBV-026,1/27/2021,9:29:04,Neal Wiley,Male,71,Normal,Carbon Creek,Food and beverages
+CAR-FBV-027,1/2/2021,17:55:06,Jerry Madden,Male,23,Member,Carbon Creek,Food and beverages
+CAR-FBV-028,1/17/2021,15:47:39,Joyce Price,Female,43,Normal,Carbon Creek,Food and beverages
+CAR-FBV-029,3/10/2021,8:41:19,Ian Harden,Male,23,Member,Carbon Creek,Food and beverages
+CAR-FBV-030,3/27/2021,12:56:53,Muriel Wheeler,Female,81,Normal,Carbon Creek,Food and beverages
+CAR-FBV-031,2/15/2021,10:58:17,Bret Villanueva,Male,78,Normal,Carbon Creek,Food and beverages
+CAR-FBV-032,2/3/2021,14:57:25,Shaun Gill,Male,81,Member,Carbon Creek,Food and beverages
+CAR-FBV-033,1/23/2021,17:40:41,Shawn Heath,Male,35,Member,Carbon Creek,Food and beverages
+CAR-FBV-034,3/28/2021,14:24:42,Antoinette Moyer,Female,26,Normal,Carbon Creek,Food and beverages
+CAR-FBV-035,3/20/2021,21:28:34,Desiree Pearson,Female,29,Member,Carbon Creek,Food and beverages
+CAR-FBV-036,1/15/2021,14:22:37,Darryl King,Male,90,Member,Carbon Creek,Food and beverages
+CAR-FBV-037,2/23/2021,12:03:41,Kara Elliott,Female,36,Member,Carbon Creek,Food and beverages
+CAR-FBV-038,1/11/2021,15:00:55,Russ Mitchell,Male,38,Member,Carbon Creek,Food and beverages
+CAR-FBV-039,2/15/2021,9:21:34,Taylor Henson,Female,83,Normal,Carbon Creek,Food and beverages
+CAR-FBV-040,2/28/2021,10:20:13,Roy Hurd,Male,86,Member,Carbon Creek,Food and beverages
+CAR-FBV-041,2/3/2021,10:46:18,Leanne Blake,Female,18,Normal,Carbon Creek,Food and beverages
+CAR-FBV-042,2/27/2021,18:19:33,Lon Dolan,Male,45,Member,Carbon Creek,Food and beverages
+CAR-FBV-043,3/25/2021,8:17:37,Silvia Michael,Female,85,Normal,Carbon Creek,Food and beverages
+CAR-FBV-044,1/19/2021,12:21:01,Jan Hernandez,Male,57,Normal,Carbon Creek,Food and beverages
+CAR-FBV-045,1/23/2021,16:49:32,Carole Ashley,Female,45,Member,Carbon Creek,Food and beverages
+CAR-FBV-046,2/16/2021,21:52:14,Abel Walsh,Male,79,Member,Carbon Creek,Food and beverages
+CAR-FBV-047,3/19/2021,19:15:44,Sabrina Green,Female,27,Member,Carbon Creek,Food and beverages
+CAR-FBV-048,2/5/2021,18:17:52,Colin Hanson,Male,82,Member,Carbon Creek,Food and beverages
+CAR-FBV-049,2/9/2021,14:17:04,Roland Shepherd,Male,50,Member,Carbon Creek,Food and beverages
+CAR-FBV-050,1/28/2021,16:18:36,Jaime Hathaway,Male,43,Normal,Carbon Creek,Food and beverages
+CAR-FBV-051,3/27/2021,11:55:45,June Grant,Female,51,Member,Carbon Creek,Food and beverages
+CAR-FBV-052,2/25/2021,8:40:53,Audrey Shah,Female,79,Member,Carbon Creek,Food and beverages
+CAR-FBV-053,2/27/2021,8:12:36,Maxine Roach,Female,18,Normal,Carbon Creek,Food and beverages
+CAR-FBV-054,3/2/2021,18:10:24,Pablo McMillan,Male,81,Normal,Carbon Creek,Food and beverages
+CAR-FBV-055,2/19/2021,19:37:56,Tami Morse,Female,41,Member,Carbon Creek,Food and beverages
+CAR-FBV-056,3/4/2021,21:20:58,Nell Morris,Female,49,Normal,Carbon Creek,Food and beverages
+CAR-FBV-057,3/22/2021,8:13:56,Victoria Kline,Female,80,Normal,Carbon Creek,Food and beverages
+CAR-FBV-058,2/9/2021,18:00:14,Aaron Hammond,Male,65,Member,Carbon Creek,Food and beverages
+CAR-HBE-001,1/5/2021,10:38:31,Bernadette Villarreal,Female,23,Member,Carbon Creek,Health and beauty
+CAR-HBE-002,1/27/2021,14:16:29,Deb Hodge,Male,45,Member,Carbon Creek,Health and beauty
+CAR-HBE-003,1/10/2021,17:15:16,Christie Clark,Female,55,Member,Carbon Creek,Health and beauty
+CAR-HBE-004,3/29/2021,13:00:55,Juana Wilkerson,Female,85,Normal,Carbon Creek,Health and beauty
+CAR-HBE-005,3/11/2021,21:17:26,Eva Gutierrez,Female,22,Member,Carbon Creek,Health and beauty
+CAR-HBE-006,3/15/2021,20:21:46,Erik Ball,Male,81,Normal,Carbon Creek,Health and beauty
+CAR-HBE-007,3/15/2021,11:18:33,Fernando Gregory,Male,40,Normal,Carbon Creek,Health and beauty
+CAR-HBE-008,2/7/2021,16:11:19,Ernest Barber,Male,21,Normal,Carbon Creek,Health and beauty
+CAR-HBE-009,3/13/2021,13:50:49,Dominic Byrd,Male,20,Member,Carbon Creek,Health and beauty
+CAR-HBE-010,2/2/2021,19:05:06,Denni Farmer,Female,39,Member,Carbon Creek,Health and beauty
+CAR-HBE-011,3/27/2021,16:03:09,Myron Raymond,Male,90,Normal,Carbon Creek,Health and beauty
+CAR-HBE-012,1/3/2021,18:41:59,Ivan Lane,Male,44,Normal,Carbon Creek,Health and beauty
+CAR-HBE-013,1/3/2021,17:57:02,Adriana Bright,Female,33,Normal,Carbon Creek,Health and beauty
+CAR-HBE-014,3/9/2021,18:53:11,Garrett Compton,Male,26,Member,Carbon Creek,Health and beauty
+CAR-HBE-015,3/11/2021,18:34:19,Alfred Fry,Male,31,Normal,Carbon Creek,Health and beauty
+CAR-HBE-016,3/4/2021,16:29:35,Micheal Hunter,Male,69,Member,Carbon Creek,Health and beauty
+CAR-HBE-017,3/12/2021,21:30:44,Robyn Cahill,Female,64,Member,Carbon Creek,Health and beauty
+CAR-HBE-018,3/7/2021,11:40:53,Lena Gilbert,Female,47,Member,Carbon Creek,Health and beauty
+CAR-HBE-019,2/15/2021,20:18:35,Peter Harrington,Male,43,Normal,Carbon Creek,Health and beauty
+CAR-HBE-020,2/20/2021,13:14:15,Jo Anderson,Female,47,Normal,Carbon Creek,Health and beauty
+CAR-HBE-021,3/6/2021,13:30:25,Genevieve Dillon,Female,42,Normal,Carbon Creek,Health and beauty
+CAR-HBE-022,1/24/2021,12:53:14,Andrea Ritter,Female,59,Normal,Carbon Creek,Health and beauty
+CAR-HBE-023,1/4/2021,8:18:45,Taylor Clayton,Male,82,Member,Carbon Creek,Health and beauty
+CAR-HBE-024,1/21/2021,11:11:14,Gustavo Parish,Male,85,Member,Carbon Creek,Health and beauty
+CAR-HBE-025,3/3/2021,13:01:45,Chester Cole,Male,58,Normal,Carbon Creek,Health and beauty
+CAR-HBE-026,2/25/2021,12:46:40,Julio Archer,Male,43,Normal,Carbon Creek,Health and beauty
+CAR-HBE-027,2/12/2021,8:15:19,Duane Shaw,Male,20,Normal,Carbon Creek,Health and beauty
+CAR-HBE-028,3/26/2021,18:52:36,Charlene Fish,Female,21,Normal,Carbon Creek,Health and beauty
+CAR-HBE-029,2/1/2021,13:38:43,Debora Graves,Female,24,Member,Carbon Creek,Health and beauty
+CAR-HBE-030,3/9/2021,20:16:33,Kyle Marsh,Male,37,Normal,Carbon Creek,Health and beauty
+CAR-HBE-031,3/4/2021,17:40:05,Anthony Lindsey,Male,48,Normal,Carbon Creek,Health and beauty
+CAR-HBE-032,3/3/2021,8:02:50,Ian Carr,Male,45,Normal,Carbon Creek,Health and beauty
+CAR-HBE-033,3/4/2021,21:44:17,Mitch Shepherd,Male,39,Member,Carbon Creek,Health and beauty
+CAR-HBE-034,2/6/2021,8:54:59,Caroline Ware,Female,22,Normal,Carbon Creek,Health and beauty
+CAR-HBE-035,2/28/2021,20:45:36,Mark Christian,Male,49,Normal,Carbon Creek,Health and beauty
+CAR-HBE-036,3/26/2021,14:59:41,Lupe O'Neal,Female,64,Member,Carbon Creek,Health and beauty
+CAR-HBE-037,1/20/2021,8:44:29,Stuart Cooke,Male,63,Member,Carbon Creek,Health and beauty
+CAR-HBE-038,3/4/2021,19:29:02,Irma Myers,Female,72,Normal,Carbon Creek,Health and beauty
+CAR-HBE-039,2/14/2021,16:51:57,Eddie Campbell,Male,30,Member,Carbon Creek,Health and beauty
+CAR-HBE-040,1/23/2021,8:40:04,Patrice Roe,Female,86,Member,Carbon Creek,Health and beauty
+CAR-HBE-041,3/26/2021,16:09:02,Doris Bowers,Female,65,Member,Carbon Creek,Health and beauty
+CAR-HBE-042,1/13/2021,12:41:42,Lana White,Female,42,Member,Carbon Creek,Health and beauty
+CAR-HBE-043,2/17/2021,8:31:03,Gail Clay,Female,62,Member,Carbon Creek,Health and beauty
+CAR-HBE-044,2/19/2021,15:23:12,Loren Benjamin,Male,38,Normal,Carbon Creek,Health and beauty
+CAR-HBE-045,3/28/2021,14:36:50,Erick Pratt,Male,88,Member,Carbon Creek,Health and beauty
+CAR-HBE-046,3/25/2021,18:51:50,Angela Garrett,Female,82,Normal,Carbon Creek,Health and beauty
+CAR-HBE-047,1/23/2021,12:03:37,Claude Shannon,Male,68,Normal,Carbon Creek,Health and beauty
+CAR-HML-001,3/3/2021,12:56:36,Bob Dodson,Male,45,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-002,3/22/2021,17:29:56,Betty Buckley,Female,46,Member,Carbon Creek,Home and lifestyle
+CAR-HML-003,3/27/2021,13:17:30,Julian Wyatt,Male,66,Member,Carbon Creek,Home and lifestyle
+CAR-HML-004,1/22/2021,13:17:24,Austin Washburn,Male,26,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-005,1/19/2021,10:32:45,Shawn Good,Male,52,Member,Carbon Creek,Home and lifestyle
+CAR-HML-006,3/10/2021,9:20:47,Lorraine Walsh,Female,89,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-007,2/18/2021,21:32:01,Kelley McGrath,Female,70,Member,Carbon Creek,Home and lifestyle
+CAR-HML-008,1/21/2021,16:53:48,Florence Ackerman,Female,35,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-009,3/21/2021,16:14:56,Devin Torres,Male,82,Member,Carbon Creek,Home and lifestyle
+CAR-HML-010,2/10/2021,17:56:23,Ryan Connelly,Male,40,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-011,3/23/2021,21:00:16,Sylvia Starr,Female,36,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-012,3/22/2021,12:05:12,Rick Hilton,Male,73,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-013,3/11/2021,10:00:31,Maureen Shaw,Female,25,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-014,1/5/2021,12:54:34,Joe Valdez,Male,80,Member,Carbon Creek,Home and lifestyle
+CAR-HML-015,1/1/2021,12:11:13,Clifford Ward,Male,76,Member,Carbon Creek,Home and lifestyle
+CAR-HML-016,3/16/2021,15:35:06,Garrett Horne,Male,40,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-017,1/6/2021,20:00:28,Ira Roberson,Male,55,Member,Carbon Creek,Home and lifestyle
+CAR-HML-018,2/5/2021,15:20:45,Nicolas Delaney,Male,30,Member,Carbon Creek,Home and lifestyle
+CAR-HML-019,1/5/2021,18:38:41,Jessie Ward,Male,39,Member,Carbon Creek,Home and lifestyle
+CAR-HML-020,1/4/2021,12:12:27,Paulette Cummings,Female,73,Member,Carbon Creek,Home and lifestyle
+CAR-HML-021,1/7/2021,9:12:41,Rosalie Hurst,Female,73,Member,Carbon Creek,Home and lifestyle
+CAR-HML-022,1/27/2021,18:51:49,Tasha Grimes,Female,38,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-023,2/15/2021,18:47:47,Bessie Gentry,Female,21,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-024,2/3/2021,9:14:15,Mercedes Snow,Female,55,Member,Carbon Creek,Home and lifestyle
+CAR-HML-025,1/10/2021,11:20:38,Warren Avila,Male,84,Member,Carbon Creek,Home and lifestyle
+CAR-HML-026,1/25/2021,12:09:50,Franklin Law,Male,90,Member,Carbon Creek,Home and lifestyle
+CAR-HML-027,2/17/2021,10:09:02,Janie Rubio,Female,85,Member,Carbon Creek,Home and lifestyle
+CAR-HML-028,1/17/2021,9:00:39,Alberto Joyce,Male,55,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-029,1/21/2021,10:23:58,Chuck Ballard,Male,53,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-030,3/24/2021,20:43:16,Greg Warren,Male,88,Member,Carbon Creek,Home and lifestyle
+CAR-HML-031,1/3/2021,18:30:17,Dina Hull,Female,62,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-032,3/4/2021,10:56:44,Deanna Carney,Female,19,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-033,3/22/2021,14:30:54,Edgar Norman,Male,30,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-034,3/8/2021,9:34:22,Tracie Chapman,Female,58,Member,Carbon Creek,Home and lifestyle
+CAR-HML-035,3/8/2021,16:43:25,Randall Magee,Male,63,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-036,1/15/2021,19:34:30,Iris Whitaker,Female,55,Member,Carbon Creek,Home and lifestyle
+CAR-HML-037,1/5/2021,18:25:11,Robyn Allen,Female,48,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-038,3/1/2021,16:32:59,Cesar Bennett,Male,85,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-039,2/6/2021,13:00:20,Stacie Daniel,Female,80,Member,Carbon Creek,Home and lifestyle
+CAR-HML-040,3/11/2021,21:40:23,Theresa Moreno,Female,79,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-041,3/7/2021,13:29:54,Scott Thompson,Male,88,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-042,1/22/2021,12:15:41,Lon Brandt,Male,76,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-043,3/29/2021,19:56:12,Jen Armstrong,Female,50,Member,Carbon Creek,Home and lifestyle
+CAR-HML-044,3/24/2021,9:15:44,Sue McDaniel,Female,55,Member,Carbon Creek,Home and lifestyle
+CAR-HML-045,1/25/2021,12:18:35,Gregg Shields,Male,69,Member,Carbon Creek,Home and lifestyle
+CAR-HML-046,1/18/2021,18:40:21,Gilbert Todd,Male,85,Member,Carbon Creek,Home and lifestyle
+CAR-HML-047,2/3/2021,21:29:49,Johnny Dudley,Male,85,Member,Carbon Creek,Home and lifestyle
+CAR-HML-048,1/16/2021,19:29:15,Simon Byrd,Male,39,Member,Carbon Creek,Home and lifestyle
+CAR-HML-049,1/29/2021,18:37:09,Angie Horton,Female,87,Member,Carbon Creek,Home and lifestyle
+CAR-HML-050,3/20/2021,14:53:27,Jay Rowe,Male,81,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-051,2/20/2021,20:52:50,Willie Holmes,Male,23,Member,Carbon Creek,Home and lifestyle
+CAR-HML-052,1/11/2021,11:52:23,Maxine Rasmussen,Female,34,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-053,1/15/2021,19:09:14,Tabitha Zuniga,Female,78,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-054,3/17/2021,11:40:33,Christa Hutchinson,Female,40,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-055,2/24/2021,13:53:52,Marilyn Nunez,Female,53,Member,Carbon Creek,Home and lifestyle
+CAR-HML-056,3/7/2021,9:11:33,Grace Stephens,Female,19,Member,Carbon Creek,Home and lifestyle
+CAR-HML-057,3/19/2021,21:46:09,Jonathan Watkins,Male,33,Member,Carbon Creek,Home and lifestyle
+CAR-HML-058,3/30/2021,10:33:27,Melody Curtis,Female,89,Member,Carbon Creek,Home and lifestyle
+CAR-HML-059,2/7/2021,8:12:05,Faye Finley,Female,32,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-060,1/19/2021,19:49:50,Dawn Rios,Female,42,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-061,3/4/2021,13:56:13,Frances Pham,Female,47,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-062,1/13/2021,8:46:06,Owen Richards,Male,53,Member,Carbon Creek,Home and lifestyle
+CAR-HML-063,2/11/2021,11:06:59,Jeremiah Castillo,Male,53,Normal,Carbon Creek,Home and lifestyle
+CAR-HML-064,2/22/2021,17:10:45,Elmer Greenwood,Male,52,Normal,Carbon Creek,Home and lifestyle
+CAR-STR-001,2/8/2021,18:07:19,Matt Carr,Male,46,Normal,Carbon Creek,Sports and travel
+CAR-STR-002,1/1/2021,14:29:23,David Maddox,Male,34,Normal,Carbon Creek,Sports and travel
+CAR-STR-003,3/2/2021,19:06:48,Enrique Huff,Male,83,Member,Carbon Creek,Sports and travel
+CAR-STR-004,3/10/2021,9:34:01,Kelvin Lawrence,Male,69,Member,Carbon Creek,Sports and travel
+CAR-STR-005,3/6/2021,18:28:39,Darren Evans,Male,47,Member,Carbon Creek,Sports and travel
+CAR-STR-006,1/24/2021,8:20:32,Lorenzo Huber,Male,90,Normal,Carbon Creek,Sports and travel
+CAR-STR-007,1/2/2021,11:05:19,Gustavo Nixon,Male,79,Normal,Carbon Creek,Sports and travel
+CAR-STR-008,1/10/2021,21:25:20,Candace Pacheco,Female,40,Member,Carbon Creek,Sports and travel
+CAR-STR-009,3/22/2021,8:51:04,Darin Olson,Male,77,Normal,Carbon Creek,Sports and travel
+CAR-STR-010,1/27/2021,19:23:21,Rochelle Byrd,Female,64,Normal,Carbon Creek,Sports and travel
+CAR-STR-011,3/6/2021,13:02:16,Kristine Moore,Female,43,Member,Carbon Creek,Sports and travel
+CAR-STR-012,3/16/2021,18:55:22,Hector Berger,Male,42,Normal,Carbon Creek,Sports and travel
+CAR-STR-013,2/25/2021,20:10:41,Colin Yates,Male,66,Normal,Carbon Creek,Sports and travel
+CAR-STR-014,2/1/2021,20:44:07,Chester Ellison,Male,28,Member,Carbon Creek,Sports and travel
+CAR-STR-015,3/23/2021,18:56:47,Nicolas Hagan,Male,49,Member,Carbon Creek,Sports and travel
+CAR-STR-016,3/4/2021,21:46:40,Ronda Maynard,Female,61,Normal,Carbon Creek,Sports and travel
+CAR-STR-017,1/20/2021,10:06:57,Lindsay Daniels,Female,57,Normal,Carbon Creek,Sports and travel
+CAR-STR-018,2/9/2021,13:03:16,Latoya Law,Female,66,Member,Carbon Creek,Sports and travel
+CAR-STR-019,3/12/2021,9:53:57,Catherine Tyler,Female,74,Member,Carbon Creek,Sports and travel
+CAR-STR-020,3/20/2021,14:58:13,Elmer Mason,Male,63,Member,Carbon Creek,Sports and travel
+CAR-STR-021,1/6/2021,21:50:31,Pamela Sloan,Female,84,Normal,Carbon Creek,Sports and travel
+CAR-STR-022,3/30/2021,15:57:47,Katrina Villarreal,Female,58,Normal,Carbon Creek,Sports and travel
+CAR-STR-023,2/14/2021,11:11:28,Stewart Day,Male,38,Normal,Carbon Creek,Sports and travel
+CAR-STR-024,1/11/2021,11:01:36,Warren Hall,Male,39,Member,Carbon Creek,Sports and travel
+CAR-STR-025,3/9/2021,12:39:59,Roberta Washington,Female,73,Member,Carbon Creek,Sports and travel
+CAR-STR-026,1/19/2021,14:07:15,Jeremy Winters,Male,59,Member,Carbon Creek,Sports and travel
+CAR-STR-027,3/10/2021,16:45:51,Max Fisher,Male,35,Normal,Carbon Creek,Sports and travel
+CAR-STR-028,1/15/2021,11:48:02,Liz Blackwell,Female,18,Normal,Carbon Creek,Sports and travel
+CAR-STR-029,1/25/2021,14:25:09,Edna Read,Female,39,Member,Carbon Creek,Sports and travel
+CAR-STR-030,3/18/2021,16:24:35,Jocelyn Price,Female,20,Normal,Carbon Creek,Sports and travel
+CAR-STR-031,1/8/2021,10:02:17,Merle Weaver,Male,66,Normal,Carbon Creek,Sports and travel
+CAR-STR-032,2/2/2021,14:45:56,Ingrid Cherry,Female,65,Member,Carbon Creek,Sports and travel
+CAR-STR-033,2/25/2021,14:35:58,Ramona Thomas,Female,67,Member,Carbon Creek,Sports and travel
+CAR-STR-034,2/17/2021,18:33:41,Kris Sheppard,Male,47,Normal,Carbon Creek,Sports and travel
+CAR-STR-035,1/7/2021,13:36:42,Young Coffey,Male,87,Normal,Carbon Creek,Sports and travel
+CAR-STR-036,3/22/2021,8:28:19,Allen Kim,Male,18,Normal,Carbon Creek,Sports and travel
+CAR-STR-037,2/4/2021,10:07:48,Laurie Hines,Female,57,Normal,Carbon Creek,Sports and travel
+CAR-STR-038,2/7/2021,21:16:08,Susan Daugherty,Female,48,Member,Carbon Creek,Sports and travel
+CAR-STR-039,2/5/2021,21:21:46,Jan Suarez,Female,27,Member,Carbon Creek,Sports and travel
+CAR-STR-040,3/20/2021,12:42:44,Josephine Maxwell,Female,59,Member,Carbon Creek,Sports and travel
+CAR-STR-041,3/9/2021,18:09:46,Miguel Tran,Male,69,Normal,Carbon Creek,Sports and travel
+CAR-STR-042,1/19/2021,10:01:30,Vincent Jefferson,Male,68,Normal,Carbon Creek,Sports and travel
+CAR-STR-043,1/29/2021,16:00:58,Rosemarie Wu,Female,41,Member,Carbon Creek,Sports and travel
+CAR-STR-044,1/1/2021,11:03:16,Delores Hansen,Female,57,Member,Carbon Creek,Sports and travel
+CAR-STR-045,1/17/2021,17:04:21,Johnny Holman,Male,88,Normal,Carbon Creek,Sports and travel
+CAR-STR-046,2/12/2021,18:14:10,Graciela Forbes,Female,40,Member,Carbon Creek,Sports and travel
+CAR-STR-047,2/11/2021,8:16:43,Gwendolyn Wyatt,Female,78,Normal,Carbon Creek,Sports and travel
+CAR-STR-048,1/17/2021,12:15:09,Preston Hawley,Male,42,Normal,Carbon Creek,Sports and travel
+CAR-STR-049,2/22/2021,14:21:35,Lucille Grimes,Female,61,Member,Carbon Creek,Sports and travel
+CAR-STR-050,1/16/2021,17:22:22,Monica Good,Female,36,Normal,Carbon Creek,Sports and travel
+CAR-STR-051,1/29/2021,15:05:39,Helen Bradshaw,Female,26,Member,Carbon Creek,Sports and travel
+CAR-STR-052,3/2/2021,21:57:28,Rosalie Keith,Female,23,Member,Carbon Creek,Sports and travel
+CAR-STR-053,1/8/2021,8:00:08,Tim Duran,Male,26,Member,Carbon Creek,Sports and travel
+CAR-STR-054,1/6/2021,12:02:31,Virgil Farley,Male,62,Normal,Carbon Creek,Sports and travel
+CAR-STR-055,1/18/2021,18:10:12,Mohammad Davis,Male,31,Member,Carbon Creek,Sports and travel
+CAR-STR-056,1/13/2021,10:52:58,Evan Donovan,Male,80,Normal,Carbon Creek,Sports and travel
+CAR-STR-057,3/17/2021,14:55:16,Hugh Kelley,Male,48,Member,Carbon Creek,Sports and travel
+CAR-STR-058,3/30/2021,19:13:58,Adriana FitzPatrick,Female,67,Normal,Carbon Creek,Sports and travel
+CAR-STR-059,3/14/2021,20:40:25,Janis Merritt,Female,39,Member,Carbon Creek,Sports and travel
+GRC-CLO-001,2/6/2021,13:25:29,Ana Bryant,Female,47,Member,Greene City,Clothing
+GRC-CLO-002,2/8/2021,11:26:42,Jen Shaffer,Male,19,Normal,Greene City,Clothing
+GRC-CLO-003,2/25/2021,9:28:19,Jackie Long,Male,67,Normal,Greene City,Clothing
+GRC-CLO-004,3/22/2021,8:40:48,Marianne Donaldson,Female,35,Member,Greene City,Clothing
+GRC-CLO-005,1/7/2021,12:20:34,Missy Hamilton,Female,47,Member,Greene City,Clothing
+GRC-CLO-006,2/15/2021,16:28:54,Rebekah Clayton,Female,65,Normal,Greene City,Clothing
+GRC-CLO-007,3/5/2021,14:08:53,Sidney Austin,Male,55,Member,Greene City,Clothing
+GRC-CLO-008,1/16/2021,12:18:35,Santiago Horn,Male,49,Member,Greene City,Clothing
+GRC-CLO-009,3/9/2021,21:45:34,Jeri Vargas,Female,78,Member,Greene City,Clothing
+GRC-CLO-010,1/25/2021,17:19:27,Kristine Wall,Female,40,Normal,Greene City,Clothing
+GRC-CLO-011,3/23/2021,19:52:19,Bessie Bradley,Female,80,Member,Greene City,Clothing
+GRC-CLO-012,1/15/2021,10:38:16,Laurel Bartlett,Female,29,Normal,Greene City,Clothing
+GRC-CLO-013,3/28/2021,15:08:07,Gabriela Spears,Female,21,Normal,Greene City,Clothing
+GRC-CLO-014,2/12/2021,17:59:46,Geoffrey Kendall,Male,61,Normal,Greene City,Clothing
+GRC-CLO-015,1/26/2021,15:21:27,Lana Rollins,Female,55,Normal,Greene City,Clothing
+GRC-CLO-016,2/21/2021,11:31:30,Roman Estes,Male,62,Member,Greene City,Clothing
+GRC-CLO-017,1/29/2021,21:00:54,Erik Johnson,Male,86,Member,Greene City,Clothing
+GRC-CLO-018,3/13/2021,10:17:03,Joanne Ballard,Female,19,Member,Greene City,Clothing
+GRC-CLO-019,1/7/2021,19:39:23,Omar Johns,Male,48,Normal,Greene City,Clothing
+GRC-CLO-020,3/14/2021,16:18:20,Candace McIntyre,Female,77,Member,Greene City,Clothing
+GRC-CLO-021,1/25/2021,20:22:18,Dixie Richardson,Female,33,Normal,Greene City,Clothing
+GRC-CLO-022,1/26/2021,11:23:12,Francine Phillips,Female,20,Normal,Greene City,Clothing
+GRC-CLO-023,2/22/2021,17:43:53,Veronica Sweeney,Female,28,Normal,Greene City,Clothing
+GRC-CLO-024,1/4/2021,9:25:33,Kari Daniels,Female,45,Member,Greene City,Clothing
+GRC-CLO-025,3/19/2021,11:32:09,Gerry Gray,Male,71,Member,Greene City,Clothing
+GRC-CLO-026,1/2/2021,20:06:40,Christian Williamson,Male,34,Member,Greene City,Clothing
+GRC-CLO-027,1/31/2021,21:36:02,Marty Lowe,Male,74,Normal,Greene City,Clothing
+GRC-CLO-028,3/9/2021,9:25:35,Jeff Flowers,Male,44,Normal,Greene City,Clothing
+GRC-CLO-029,2/22/2021,16:20:57,Erica Coffey,Female,77,Normal,Greene City,Clothing
+GRC-CLO-030,2/13/2021,15:46:57,Robbie Russo,Female,54,Member,Greene City,Clothing
+GRC-CLO-031,2/28/2021,14:33:19,Eva Padilla,Female,75,Normal,Greene City,Clothing
+GRC-CLO-032,3/13/2021,16:53:45,Kristi Clark,Female,81,Normal,Greene City,Clothing
+GRC-CLO-033,2/26/2021,9:45:10,Julian Cooke,Male,36,Normal,Greene City,Clothing
+GRC-CLO-034,1/16/2021,17:35:55,Jeremiah Randolph,Male,30,Normal,Greene City,Clothing
+GRC-CLO-035,1/13/2021,16:16:32,Herbert North,Male,54,Member,Greene City,Clothing
+GRC-CLO-036,1/5/2021,17:32:14,Leslie Maddox,Female,61,Member,Greene City,Clothing
+GRC-CLO-037,2/9/2021,9:42:36,Rudy Gregory,Male,30,Normal,Greene City,Clothing
+GRC-CLO-038,2/22/2021,13:51:26,Jodi Fox,Female,61,Normal,Greene City,Clothing
+GRC-CLO-039,2/4/2021,9:23:29,Jana Osborne,Female,82,Member,Greene City,Clothing
+GRC-CLO-040,3/20/2021,8:13:58,Rex Bassett,Male,41,Normal,Greene City,Clothing
+GRC-CLO-041,1/10/2021,11:07:35,Cherie Mathis,Female,46,Normal,Greene City,Clothing
+GRC-CLO-042,3/1/2021,14:06:18,Pedro Skinner,Male,36,Member,Greene City,Clothing
+GRC-CLO-043,1/14/2021,9:52:52,Yolanda Mitchel,Female,65,Member,Greene City,Clothing
+GRC-CLO-044,1/24/2021,12:48:38,Micheal Colon,Male,58,Member,Greene City,Clothing
+GRC-CLO-045,1/12/2021,12:18:40,Maria Dixon,Female,47,Normal,Greene City,Clothing
+GRC-CLO-046,2/16/2021,11:48:02,Garry Porter,Male,53,Member,Greene City,Clothing
+GRC-CLO-047,2/27/2021,14:23:37,Lucas Hall,Male,18,Normal,Greene City,Clothing
+GRC-CLO-048,3/20/2021,16:52:10,Javier Cooley,Male,25,Member,Greene City,Clothing
+GRC-CLO-049,2/16/2021,13:45:05,Phillip Dow,Male,35,Member,Greene City,Clothing
+GRC-CLO-050,3/24/2021,19:23:29,Jasmine Groves,Female,20,Member,Greene City,Clothing
+GRC-CLO-051,2/24/2021,18:56:23,Everett Sloan,Male,65,Member,Greene City,Clothing
+GRC-CLO-052,2/27/2021,12:13:25,Sonja Cheng,Female,55,Member,Greene City,Clothing
+GRC-CLO-053,1/18/2021,15:46:41,Evelyn Bishop,Female,49,Member,Greene City,Clothing
+GRC-CLO-054,2/2/2021,19:07:49,Margarita Harper,Female,61,Normal,Greene City,Clothing
+GRC-CLO-055,1/8/2021,21:38:36,Barry Lockwood,Male,67,Member,Greene City,Clothing
+GRC-CLO-056,3/14/2021,15:56:40,Geraldine Becker,Female,67,Member,Greene City,Clothing
+GRC-CLO-057,3/15/2021,9:31:58,Carroll Thayer,Male,58,Normal,Greene City,Clothing
+GRC-CLO-058,2/16/2021,19:37:13,Therese Goodwin,Female,67,Normal,Greene City,Clothing
+GRC-CLO-059,2/3/2021,10:40:09,Juan Ochoa,Male,74,Member,Greene City,Clothing
+GRC-CLO-060,3/6/2021,19:57:56,Santos Blankenship,Male,75,Member,Greene City,Clothing
+GRC-CLO-061,2/7/2021,15:40:27,Sheila Simmons,Female,24,Normal,Greene City,Clothing
+GRC-CLO-062,2/22/2021,20:04:19,Alfredo Tyler,Male,36,Normal,Greene City,Clothing
+GRC-ELE-001,3/9/2021,16:10:55,Ross Melendez,Male,33,Member,Greene City,Electronics
+GRC-ELE-002,3/9/2021,10:16:49,Meredith Raymond,Female,54,Member,Greene City,Electronics
+GRC-ELE-003,2/10/2021,12:51:45,Nicolas Petty,Male,26,Member,Greene City,Electronics
+GRC-ELE-004,2/17/2021,14:52:55,Mitch Campbell,Male,74,Member,Greene City,Electronics
+GRC-ELE-005,1/4/2021,8:18:06,Lee Estrada,Male,35,Member,Greene City,Electronics
+GRC-ELE-006,1/19/2021,13:07:13,Kerry Patel,Male,80,Member,Greene City,Electronics
+GRC-ELE-007,3/15/2021,13:43:35,Kelsey Gibbs,Female,43,Member,Greene City,Electronics
+GRC-ELE-008,3/2/2021,14:39:00,Nikki Gillespie,Female,22,Normal,Greene City,Electronics
+GRC-ELE-009,1/31/2021,8:51:22,Simon Huffman,Male,41,Normal,Greene City,Electronics
+GRC-ELE-010,2/26/2021,12:32:13,Sherri Fleming,Female,26,Member,Greene City,Electronics
+GRC-ELE-011,3/12/2021,12:48:34,Lesley Marquez,Female,30,Member,Greene City,Electronics
+GRC-ELE-012,3/2/2021,20:05:50,Edith Santos,Female,26,Member,Greene City,Electronics
+GRC-ELE-013,2/9/2021,8:28:24,Trudy Ramos,Female,48,Member,Greene City,Electronics
+GRC-ELE-014,1/24/2021,14:50:13,Karl Pugh,Male,52,Member,Greene City,Electronics
+GRC-ELE-015,2/23/2021,10:52:43,Kayla Simpson,Female,42,Normal,Greene City,Electronics
+GRC-ELE-016,2/10/2021,10:45:22,Nelson Landry,Male,76,Member,Greene City,Electronics
+GRC-ELE-017,3/1/2021,16:21:05,Floyd Bell,Male,69,Normal,Greene City,Electronics
+GRC-ELE-018,2/2/2021,9:36:02,Marisa Kirk,Female,35,Member,Greene City,Electronics
+GRC-ELE-019,1/30/2021,20:11:05,Cecelia Stafford,Female,45,Normal,Greene City,Electronics
+GRC-ELE-020,3/4/2021,9:23:40,Emmanuel Brewer,Male,41,Member,Greene City,Electronics
+GRC-ELE-021,1/1/2021,13:49:31,Rose Barrett,Female,61,Normal,Greene City,Electronics
+GRC-ELE-022,1/2/2021,12:10:41,David Walter,Male,64,Normal,Greene City,Electronics
+GRC-ELE-023,2/7/2021,10:26:15,Dean Hurd,Male,79,Normal,Greene City,Electronics
+GRC-ELE-024,3/26/2021,13:02:17,Yvette Moon,Female,86,Normal,Greene City,Electronics
+GRC-ELE-025,2/6/2021,20:08:33,Ronnie Andrews,Male,81,Normal,Greene City,Electronics
+GRC-ELE-026,3/14/2021,17:27:48,Johnny Powell,Male,76,Normal,Greene City,Electronics
+GRC-ELE-027,1/30/2021,16:27:30,Sabrina Clements,Female,29,Normal,Greene City,Electronics
+GRC-ELE-028,3/27/2021,12:09:56,Glen Sherman,Male,27,Member,Greene City,Electronics
+GRC-ELE-029,1/15/2021,15:24:43,Omar Decker,Male,21,Normal,Greene City,Electronics
+GRC-ELE-030,2/12/2021,20:53:41,Lupe Small,Female,68,Member,Greene City,Electronics
+GRC-ELE-031,1/31/2021,10:07:03,Lena Maher,Female,49,Normal,Greene City,Electronics
+GRC-ELE-032,1/24/2021,8:28:19,Calvin Fink,Male,66,Normal,Greene City,Electronics
+GRC-ELE-033,1/12/2021,12:22:34,Bernard Meyer,Male,54,Member,Greene City,Electronics
+GRC-ELE-034,2/17/2021,10:21:21,Stefanie Peterson,Female,55,Member,Greene City,Electronics
+GRC-ELE-035,1/31/2021,21:15:28,Dennis Dawson,Male,35,Normal,Greene City,Electronics
+GRC-ELE-036,3/16/2021,21:58:39,Adrienne Payne,Female,59,Normal,Greene City,Electronics
+GRC-ELE-037,1/31/2021,20:27:19,Sergio Peterson,Male,68,Member,Greene City,Electronics
+GRC-ELE-038,2/23/2021,16:57:59,Genevieve Carney,Female,70,Member,Greene City,Electronics
+GRC-ELE-039,3/25/2021,8:51:34,Trevor Bass,Male,85,Normal,Greene City,Electronics
+GRC-ELE-040,2/28/2021,11:40:22,Cory Atkins,Male,84,Normal,Greene City,Electronics
+GRC-ELE-041,2/25/2021,9:48:05,Sandra Burke,Female,46,Normal,Greene City,Electronics
+GRC-ELE-042,1/28/2021,10:09:18,Irene Perry,Female,64,Member,Greene City,Electronics
+GRC-ELE-043,2/25/2021,11:54:57,George Sharp,Male,47,Member,Greene City,Electronics
+GRC-ELE-044,1/19/2021,12:22:51,Stacy Darling,Female,42,Member,Greene City,Electronics
+GRC-ELE-045,2/7/2021,18:16:11,Nadine Tompkins,Female,64,Normal,Greene City,Electronics
+GRC-ELE-046,3/6/2021,21:18:30,Willard Hatfield,Male,30,Normal,Greene City,Electronics
+GRC-ELE-047,2/6/2021,10:48:04,Carlos Hart,Male,64,Member,Greene City,Electronics
+GRC-ELE-048,3/2/2021,20:56:22,Josephine Benson,Female,37,Member,Greene City,Electronics
+GRC-ELE-049,1/10/2021,11:41:18,Esther Wiggins,Female,27,Normal,Greene City,Electronics
+GRC-ELE-050,2/15/2021,11:24:57,Kristie Maynard,Female,32,Normal,Greene City,Electronics
+GRC-ELE-051,2/7/2021,13:39:44,Jacob Garrison,Male,47,Normal,Greene City,Electronics
+GRC-ELE-052,3/2/2021,8:00:09,Valerie Cowan,Female,76,Normal,Greene City,Electronics
+GRC-ELE-053,3/11/2021,17:18:38,Tanya Watts,Female,50,Member,Greene City,Electronics
+GRC-ELE-054,1/26/2021,16:39:51,Mickey Baird,Male,69,Normal,Greene City,Electronics
+GRC-ELE-055,3/10/2021,15:08:13,Kathryn Norman,Female,23,Normal,Greene City,Electronics
+GRC-FBV-001,2/20/2021,21:10:34,Claudia Haley,Female,47,Member,Greene City,Food and beverages
+GRC-FBV-002,1/25/2021,15:25:40,Shawna Russel,Female,88,Normal,Greene City,Food and beverages
+GRC-FBV-003,2/6/2021,17:38:59,Cindy Graham,Female,27,Member,Greene City,Food and beverages
+GRC-FBV-004,3/5/2021,21:24:20,Jane Shannon,Female,69,Member,Greene City,Food and beverages
+GRC-FBV-005,1/26/2021,11:54:05,Sylvia Hurley,Female,18,Normal,Greene City,Food and beverages
+GRC-FBV-006,2/20/2021,16:31:14,Luke Chaney,Male,42,Normal,Greene City,Food and beverages
+GRC-FBV-007,1/26/2021,15:13:09,Ed Krueger,Male,29,Member,Greene City,Food and beverages
+GRC-FBV-008,1/18/2021,15:22:35,Carlton Arnold,Male,46,Normal,Greene City,Food and beverages
+GRC-FBV-009,3/5/2021,18:41:24,Paul Wilcox,Male,72,Member,Greene City,Food and beverages
+GRC-FBV-010,3/10/2021,19:36:04,Gale Simms,Female,70,Normal,Greene City,Food and beverages
+GRC-FBV-011,3/6/2021,19:38:04,Bud Livingston,Male,22,Normal,Greene City,Food and beverages
+GRC-FBV-012,1/14/2021,14:19:58,Richard Payne,Male,57,Normal,Greene City,Food and beverages
+GRC-FBV-013,2/2/2021,10:28:17,Alfred Castaneda,Male,70,Member,Greene City,Food and beverages
+GRC-FBV-014,1/8/2021,9:25:29,Myrtle Spence,Female,75,Member,Greene City,Food and beverages
+GRC-FBV-015,1/25/2021,18:23:29,Michelle Gallagher,Female,54,Normal,Greene City,Food and beverages
+GRC-FBV-016,2/5/2021,14:56:33,Elaine Holloway,Female,21,Member,Greene City,Food and beverages
+GRC-FBV-017,1/7/2021,12:35:20,Faith Castro,Female,64,Member,Greene City,Food and beverages
+GRC-FBV-018,1/14/2021,11:15:20,Ida Cooper,Female,40,Normal,Greene City,Food and beverages
+GRC-FBV-019,3/10/2021,18:56:54,Sidney Holcomb,Male,28,Normal,Greene City,Food and beverages
+GRC-FBV-020,3/20/2021,10:53:49,Margarita Cox,Female,22,Member,Greene City,Food and beverages
+GRC-FBV-021,2/15/2021,17:50:32,Beth Gomez,Female,80,Member,Greene City,Food and beverages
+GRC-FBV-022,3/3/2021,19:30:08,Rebbecca Henry,Female,46,Member,Greene City,Food and beverages
+GRC-FBV-023,1/29/2021,10:02:15,Angelina Burch,Female,62,Normal,Greene City,Food and beverages
+GRC-FBV-024,2/7/2021,14:30:35,Tammie Spence,Female,83,Member,Greene City,Food and beverages
+GRC-FBV-025,1/5/2021,11:28:12,Tamara Branch,Female,56,Normal,Greene City,Food and beverages
+GRC-FBV-026,1/13/2021,15:32:22,Saul Pittman,Male,54,Normal,Greene City,Food and beverages
+GRC-FBV-027,2/20/2021,21:56:46,Israel Waller,Male,36,Normal,Greene City,Food and beverages
+GRC-FBV-028,1/17/2021,15:29:51,Tyrone Dalton,Male,66,Member,Greene City,Food and beverages
+GRC-FBV-029,1/26/2021,18:01:59,Beatrice Bowman,Female,30,Member,Greene City,Food and beverages
+GRC-FBV-030,3/20/2021,9:13:31,Harold Schmidt,Male,45,Member,Greene City,Food and beverages
+GRC-FBV-031,3/8/2021,8:37:01,Teri Kerr,Female,42,Member,Greene City,Food and beverages
+GRC-FBV-032,2/23/2021,14:40:42,Laurel Hood,Female,26,Member,Greene City,Food and beverages
+GRC-FBV-033,2/20/2021,18:02:26,Scott Richard,Male,53,Member,Greene City,Food and beverages
+GRC-FBV-034,3/30/2021,10:58:03,Timothy Hand,Male,74,Member,Greene City,Food and beverages
+GRC-FBV-035,3/27/2021,17:59:15,Christian Dunlap,Male,74,Normal,Greene City,Food and beverages
+GRC-FBV-036,2/4/2021,16:47:48,Brent Meyer,Male,46,Member,Greene City,Food and beverages
+GRC-FBV-037,3/1/2021,19:40:42,Oliver Bowers,Male,33,Member,Greene City,Food and beverages
+GRC-FBV-038,2/11/2021,20:00:34,Johanna Dickson,Female,78,Member,Greene City,Food and beverages
+GRC-FBV-039,1/22/2021,12:08:34,Elvira Finch,Female,87,Normal,Greene City,Food and beverages
+GRC-FBV-040,3/14/2021,14:38:45,Traci Finn,Female,52,Normal,Greene City,Food and beverages
+GRC-FBV-041,2/3/2021,18:49:00,Morris Calderon,Male,65,Member,Greene City,Food and beverages
+GRC-FBV-042,1/1/2021,10:29:49,Tyrone Howell,Male,42,Normal,Greene City,Food and beverages
+GRC-FBV-043,1/8/2021,19:12:03,Dana Sharp,Female,18,Member,Greene City,Food and beverages
+GRC-FBV-044,3/27/2021,15:19:18,Stella Pollard,Female,60,Member,Greene City,Food and beverages
+GRC-FBV-045,2/24/2021,17:16:11,Margie Ryan,Female,66,Normal,Greene City,Food and beverages
+GRC-FBV-046,2/25/2021,16:34:51,Brenda Harvey,Female,42,Member,Greene City,Food and beverages
+GRC-FBV-047,1/26/2021,20:06:33,Eduardo Reynolds,Male,32,Normal,Greene City,Food and beverages
+GRC-FBV-048,1/1/2021,12:42:31,Bonita Flynn,Female,61,Member,Greene City,Food and beverages
+GRC-FBV-049,2/26/2021,13:31:42,Bobby Rhodes,Male,63,Member,Greene City,Food and beverages
+GRC-FBV-050,2/4/2021,8:38:15,Leanne Vance,Female,69,Normal,Greene City,Food and beverages
+GRC-HBE-001,3/5/2021,15:21:08,Peter Singleton,Male,73,Normal,Greene City,Health and beauty
+GRC-HBE-002,2/27/2021,9:17:00,Arthur Pope,Male,44,Member,Greene City,Health and beauty
+GRC-HBE-003,2/14/2021,18:13:37,Theodore Bass,Male,54,Member,Greene City,Health and beauty
+GRC-HBE-004,3/12/2021,11:37:58,Pat Hand,Male,68,Member,Greene City,Health and beauty
+GRC-HBE-005,3/29/2021,19:03:37,Chad Plummer,Male,21,Normal,Greene City,Health and beauty
+GRC-HBE-006,3/19/2021,17:00:22,Roland House,Male,60,Normal,Greene City,Health and beauty
+GRC-HBE-007,3/30/2021,20:35:53,Rudy Fleming,Male,41,Member,Greene City,Health and beauty
+GRC-HBE-008,2/25/2021,11:25:20,Jimmy Flynn,Male,88,Member,Greene City,Health and beauty
+GRC-HBE-009,2/6/2021,9:41:49,Russ Cross,Male,55,Member,Greene City,Health and beauty
+GRC-HBE-010,1/26/2021,18:38:41,Howard Magee,Male,38,Member,Greene City,Health and beauty
+GRC-HBE-011,2/11/2021,13:42:52,Polly Stephenson,Female,54,Normal,Greene City,Health and beauty
+GRC-HBE-012,2/26/2021,19:06:29,Missy Newman,Female,54,Normal,Greene City,Health and beauty
+GRC-HBE-013,2/20/2021,13:32:56,Wes Hansen,Male,64,Normal,Greene City,Health and beauty
+GRC-HBE-014,3/13/2021,15:53:06,Garrett Brown,Male,38,Normal,Greene City,Health and beauty
+GRC-HBE-015,3/12/2021,11:39:52,Dwight Richards,Male,50,Member,Greene City,Health and beauty
+GRC-HBE-016,1/25/2021,21:46:53,Merle Jarvis,Male,60,Member,Greene City,Health and beauty
+GRC-HBE-017,3/5/2021,12:15:02,Sylvia Lawson,Female,79,Member,Greene City,Health and beauty
+GRC-HBE-018,2/15/2021,9:04:41,Christine Sheppard,Female,56,Member,Greene City,Health and beauty
+GRC-HBE-019,2/27/2021,18:08:02,Gertrude Henry,Female,59,Normal,Greene City,Health and beauty
+GRC-HBE-020,3/5/2021,10:30:39,Lynn Garner,Female,84,Member,Greene City,Health and beauty
+GRC-HBE-021,1/2/2021,16:39:22,Anita Kendall,Female,54,Normal,Greene City,Health and beauty
+GRC-HBE-022,1/25/2021,21:14:24,Mitch Cherry,Male,69,Normal,Greene City,Health and beauty
+GRC-HBE-023,1/12/2021,19:11:32,Alexandra Yates,Female,55,Normal,Greene City,Health and beauty
+GRC-HBE-024,1/28/2021,12:44:24,Lindsey McGrath,Female,61,Member,Greene City,Health and beauty
+GRC-HBE-025,1/12/2021,21:32:06,Bobbi Berger,Female,81,Member,Greene City,Health and beauty
+GRC-HBE-026,3/30/2021,10:32:01,Jeffery Barnett,Male,36,Member,Greene City,Health and beauty
+GRC-HBE-027,3/5/2021,20:09:11,Diane Finley,Female,59,Member,Greene City,Health and beauty
+GRC-HBE-028,3/29/2021,13:06:15,Barry Hunter,Male,42,Member,Greene City,Health and beauty
+GRC-HBE-029,3/29/2021,12:45:27,Pedro McIntosh,,56,Member,Greene City,Health and beauty
+GRC-HBE-030,2/5/2021,8:19:04,Erin Roach,Female,53,Normal,Greene City,Health and beauty
+GRC-HBE-031,3/1/2021,19:52:11,Nick Stout,Male,46,Normal,Greene City,Health and beauty
+GRC-HBE-032,3/1/2021,13:55:48,Mario Buckley,Male,72,Normal,Greene City,Health and beauty
+GRC-HBE-033,3/14/2021,9:17:04,Jack Downey,Male,26,Member,Greene City,Health and beauty
+GRC-HBE-034,1/15/2021,16:35:42,Christophe Buchanan,Male,52,Member,Greene City,Health and beauty
+GRC-HBE-035,1/22/2021,16:06:47,Janelle Young,Female,65,Normal,Greene City,Health and beauty
+GRC-HBE-036,2/23/2021,11:04:21,Beverly Gentry,Female,74,Normal,Greene City,Health and beauty
+GRC-HBE-037,3/2/2021,13:50:23,Alma Beard,Female,33,Normal,Greene City,Health and beauty
+GRC-HBE-038,1/6/2021,8:14:13,Orlando Lake,Male,35,Member,Greene City,Health and beauty
+GRC-HBE-039,3/29/2021,16:05:11,Ivan Sparks,Male,55,Normal,Greene City,Health and beauty
+GRC-HBE-040,3/15/2021,20:01:36,Rex Denton,Male,34,Normal,Greene City,Health and beauty
+GRC-HBE-041,1/14/2021,13:00:14,Jennie Stout,Female,70,Normal,Greene City,Health and beauty
+GRC-HBE-042,3/15/2021,21:48:27,Gene Dalton,Male,63,Normal,Greene City,Health and beauty
+GRC-HBE-043,1/27/2021,20:14:24,Jim Palmer,Male,67,Member,Greene City,Health and beauty
+GRC-HBE-044,1/28/2021,18:14:57,Karla Kane,Female,72,Member,Greene City,Health and beauty
+GRC-HBE-045,2/25/2021,20:26:47,Noel Zamora,Male,76,Normal,Greene City,Health and beauty
+GRC-HBE-046,2/15/2021,9:54:21,Randy Cohen,Male,18,Normal,Greene City,Health and beauty
+GRC-HBE-047,1/28/2021,11:07:41,Lance Curry,Male,86,Normal,Greene City,Health and beauty
+GRC-HBE-048,3/24/2021,15:26:29,Myrtle Mansfield,Female,48,Normal,Greene City,Health and beauty
+GRC-HBE-049,2/21/2021,18:42:04,Lonnie Pacheco,Male,27,Member,Greene City,Health and beauty
+GRC-HBE-050,2/18/2021,9:24:19,Florence Lamb,Female,52,Normal,Greene City,Health and beauty
+GRC-HBE-051,1/3/2021,14:40:10,Kent Roberson,Male,36,Member,Greene City,Health and beauty
+GRC-HBE-052,1/28/2021,19:10:21,Travis Sexton,Male,35,Member,Greene City,Health and beauty
+GRC-HML-001,3/11/2021,16:10:23,Kerri Singleton,Female,42,Normal,Greene City,Home and lifestyle
+GRC-HML-002,3/15/2021,18:07:23,Simon Forbes,Male,50,Normal,Greene City,Home and lifestyle
+GRC-HML-003,3/3/2021,11:29:43,Lyle Yoder,Male,49,Member,Greene City,Home and lifestyle
+GRC-HML-004,1/17/2021,15:41:09,Yvette West,Female,51,Member,Greene City,Home and lifestyle
+GRC-HML-005,3/7/2021,17:24:13,Isaac Burk,Male,31,Normal,Greene City,Home and lifestyle
+GRC-HML-006,3/5/2021,14:43:31,William Hodges,Male,59,Normal,Greene City,Home and lifestyle
+GRC-HML-007,1/20/2021,21:08:05,Art Bryant,Male,88,Normal,Greene City,Home and lifestyle
+GRC-HML-008,3/6/2021,14:00:02,Alberto Pratt,Male,19,Member,Greene City,Home and lifestyle
+GRC-HML-009,3/7/2021,20:18:24,Calvin William,Male,72,Normal,Greene City,Home and lifestyle
+GRC-HML-010,3/3/2021,18:19:53,Candace Massey,Female,43,Member,Greene City,Home and lifestyle
+GRC-HML-011,2/8/2021,12:10:41,Glen Delgado,Male,18,Member,Greene City,Home and lifestyle
+GRC-HML-012,2/11/2021,19:45:38,Ronda Stanton,Female,53,Normal,Greene City,Home and lifestyle
+GRC-HML-013,1/26/2021,10:32:25,Alfred Zimmerman,Male,85,Normal,Greene City,Home and lifestyle
+GRC-HML-014,2/15/2021,12:06:22,Keith Wheeler,Male,76,Member,Greene City,Home and lifestyle
+GRC-HML-015,3/20/2021,17:01:20,Willie Myers,Male,82,Normal,Greene City,Home and lifestyle
+GRC-HML-016,2/2/2021,20:15:17,Christophe Levy,Male,90,Normal,Greene City,Home and lifestyle
+GRC-HML-017,2/7/2021,20:36:21,Jason Lucas,Male,28,Normal,Greene City,Home and lifestyle
+GRC-HML-018,3/2/2021,10:22:28,Leonard Page,Male,30,Member,Greene City,Home and lifestyle
+GRC-HML-019,1/5/2021,21:41:28,Veronica Green,Female,26,Member,Greene City,Home and lifestyle
+GRC-HML-020,3/15/2021,16:50:53,Lester McCormick,Male,32,Normal,Greene City,Home and lifestyle
+GRC-HML-021,2/12/2021,11:21:40,Loren Blevins,Male,73,Member,Greene City,Home and lifestyle
+GRC-HML-022,2/4/2021,20:05:49,Darla Porter,Female,44,Member,Greene City,Home and lifestyle
+GRC-HML-023,3/19/2021,20:50:58,Ernesto Baxter,Male,68,Member,Greene City,Home and lifestyle
+GRC-HML-024,1/20/2021,15:48:53,Merle Lynch,Male,55,Normal,Greene City,Home and lifestyle
+GRC-HML-025,2/25/2021,18:35:52,Amanda Warner,Female,30,Member,Greene City,Home and lifestyle
+GRC-HML-026,2/8/2021,17:29:41,Julian Downey,Male,57,Normal,Greene City,Home and lifestyle
+GRC-HML-027,1/17/2021,15:01:05,Leslie Erickson,Female,20,Member,Greene City,Home and lifestyle
+GRC-HML-028,3/18/2021,8:27:09,Gilbert Weaver,Male,18,Normal,Greene City,Home and lifestyle
+GRC-HML-029,1/8/2021,20:33:24,Rebekah Cunningham,Female,38,Member,Greene City,Home and lifestyle
+GRC-HML-030,1/6/2021,20:27:46,Jim Byers,Male,78,Normal,Greene City,Home and lifestyle
+GRC-HML-031,3/2/2021,11:55:53,Janet Combs,Female,90,Member,Greene City,Home and lifestyle
+GRC-HML-032,3/18/2021,19:08:15,Bruce Taylor,Male,30,Normal,Greene City,Home and lifestyle
+GRC-HML-033,3/9/2021,9:39:57,Alyssa Meadows,Female,50,Member,Greene City,Home and lifestyle
+GRC-HML-034,3/26/2021,13:56:22,Sandy Lancaster,Female,46,Member,Greene City,Home and lifestyle
+GRC-HML-035,1/24/2021,15:21:18,Lewis Wise,Male,88,Normal,Greene City,Home and lifestyle
+GRC-HML-036,3/5/2021,20:20:21,Traci Cain,Female,30,Normal,Greene City,Home and lifestyle
+GRC-HML-037,1/15/2021,15:00:43,Sue Herrera,Female,35,Normal,Greene City,Home and lifestyle
+GRC-HML-038,3/12/2021,12:58:44,Deborah Oneill,Female,35,Member,Greene City,Home and lifestyle
+GRC-HML-039,3/17/2021,18:15:50,Cara Armstrong,Female,48,Normal,Greene City,Home and lifestyle
+GRC-HML-040,1/12/2021,13:40:39,Sabrina Johnston,Female,43,Normal,Greene City,Home and lifestyle
+GRC-HML-041,2/9/2021,8:05:42,Brendan Davis,Male,30,Normal,Greene City,Home and lifestyle
+GRC-HML-042,1/27/2021,10:56:11,Cheryl Walsh,Female,45,Normal,Greene City,Home and lifestyle
+GRC-HML-043,2/22/2021,15:01:30,Andre Rider,Male,48,Normal,Greene City,Home and lifestyle
+GRC-HML-044,2/8/2021,15:52:14,Stephanie Weeks,Female,85,Normal,Greene City,Home and lifestyle
+GRC-HML-045,3/24/2021,8:11:42,Joey Gill,Male,76,Normal,Greene City,Home and lifestyle
+GRC-HML-046,1/3/2021,12:04:30,Nichole Weston,Female,73,Normal,Greene City,Home and lifestyle
+GRC-HML-047,1/9/2021,17:35:26,Vera Rowe,Female,31,Member,Greene City,Home and lifestyle
+GRC-HML-048,2/9/2021,17:57:39,Adrian Rose,Male,51,Member,Greene City,Home and lifestyle
+GRC-HML-049,2/10/2021,21:24:19,Rogelio Crawford,Male,85,Member,Greene City,Home and lifestyle
+GRC-HML-050,3/2/2021,10:36:15,Tracie Reilly,Female,18,Normal,Greene City,Home and lifestyle
+GRC-STR-001,1/15/2021,10:34:32,Nellie Beach,Female,41,Member,Greene City,Sports and travel
+GRC-STR-002,1/28/2021,14:51:11,Jon York,Male,75,Member,Greene City,Sports and travel
+GRC-STR-003,1/10/2021,21:11:25,Clinton Gregory,Male,41,Normal,Greene City,Sports and travel
+GRC-STR-004,2/8/2021,18:58:53,Naomi Cannon,Female,18,Member,Greene City,Sports and travel
+GRC-STR-005,2/3/2021,10:57:51,Rhonda Downing,Female,53,Member,Greene City,Sports and travel
+GRC-STR-006,2/5/2021,16:33:52,Jean Franklin,Female,89,Member,Greene City,Sports and travel
+GRC-STR-007,3/9/2021,18:55:59,Troy Britton,Male,48,Member,Greene City,Sports and travel
+GRC-STR-008,2/8/2021,11:25:23,Sheryl Hayes,Female,56,Normal,Greene City,Sports and travel
+GRC-STR-009,2/10/2021,14:15:57,Vanessa Fleming,Female,49,Normal,Greene City,Sports and travel
+GRC-STR-010,2/16/2021,19:06:10,Jeremiah Baldwin,Male,26,Normal,Greene City,Sports and travel
+GRC-STR-011,3/27/2021,8:58:57,Jacob Winters,Male,22,Normal,Greene City,Sports and travel
+GRC-STR-012,1/4/2021,10:19:04,Rene Cornell,Male,60,Normal,Greene City,Sports and travel
+GRC-STR-013,3/11/2021,9:41:05,Blanca Charles,Female,24,Member,Greene City,Sports and travel
+GRC-STR-014,3/24/2021,13:39:26,Jeannie Stanley,Female,86,Normal,Greene City,Sports and travel
+GRC-STR-015,2/26/2021,9:19:18,Clint Martin,Male,65,Normal,Greene City,Sports and travel
+GRC-STR-016,3/6/2021,17:02:45,Jody Vazquez,Female,77,Normal,Greene City,Sports and travel
+GRC-STR-017,1/31/2021,21:09:13,Wesley Oneill,Male,51,Member,Greene City,Sports and travel
+GRC-STR-018,3/12/2021,11:21:55,Vincent Burke,Male,63,Normal,Greene City,Sports and travel
+GRC-STR-019,2/24/2021,20:42:47,Laura Hardy,Female,53,Normal,Greene City,Sports and travel
+GRC-STR-020,3/16/2021,16:00:41,Tommy Hooper,Male,85,Normal,Greene City,Sports and travel
+GRC-STR-021,1/31/2021,14:44:55,Martin Shaw,Male,50,Member,Greene City,Sports and travel
+GRC-STR-022,1/25/2021,19:26:09,Todd Patel,Male,29,Normal,Greene City,Sports and travel
+GRC-STR-023,2/27/2021,21:55:50,Seth Jacobs,Male,75,Normal,Greene City,Sports and travel
+GRC-STR-024,3/22/2021,12:39:56,Dina Myers,Female,80,Member,Greene City,Sports and travel
+GRC-STR-025,3/26/2021,20:48:16,Jeanette Nixon,Female,63,Member,Greene City,Sports and travel
+GRC-STR-026,3/22/2021,9:48:35,Stephen Watkins,Male,59,Normal,Greene City,Sports and travel
+GRC-STR-027,3/16/2021,18:03:37,Jonathan Mansfield,Male,52,Normal,Greene City,Sports and travel
+GRC-STR-028,3/21/2021,20:05:22,Jeannie McCann,Female,29,Member,Greene City,Sports and travel
+GRC-STR-029,3/20/2021,20:14:28,Lon Davidson,Male,48,Normal,Greene City,Sports and travel
+GRC-STR-030,1/21/2021,8:47:47,Shelby Cross,Female,63,Member,Greene City,Sports and travel
+GRC-STR-031,2/3/2021,17:42:02,Myron Holcomb,Male,68,Member,Greene City,Sports and travel
+GRC-STR-032,3/25/2021,14:36:56,Cindy Love,Female,40,Normal,Greene City,Sports and travel
+GRC-STR-033,2/25/2021,10:03:56,Joe Vasquez,Male,59,Normal,Greene City,Sports and travel
+GRC-STR-034,1/8/2021,15:46:58,Susan Patton,Female,38,Member,Greene City,Sports and travel
+GRC-STR-035,1/16/2021,17:05:07,Pauline Sheppard,Female,61,Member,Greene City,Sports and travel
+GRC-STR-036,2/13/2021,14:15:33,Sheryl Dunham,Female,84,Member,Greene City,Sports and travel
+GRC-STR-037,1/26/2021,14:35:14,Vivian Boone,Female,67,Normal,Greene City,Sports and travel
+GRC-STR-038,1/29/2021,18:06:48,Harvey Pacheco,Male,38,Member,Greene City,Sports and travel
+GRC-STR-039,1/19/2021,11:23:51,Antonio Christensen,Male,22,Normal,Greene City,Sports and travel
+GRC-STR-040,3/15/2021,15:53:47,Ivan Hurley,Male,83,Member,Greene City,Sports and travel
+GRC-STR-041,3/17/2021,15:52:38,Nancy Bradley,Female,85,Normal,Greene City,Sports and travel
+GRC-STR-042,1/13/2021,12:22:03,Rich Gaines,Male,18,Member,Greene City,Sports and travel
+GRC-STR-043,3/6/2021,16:56:27,Don Dickerson,Male,70,Member,Greene City,Sports and travel
+GRC-STR-044,2/3/2021,8:13:58,Barb Copeland,Female,52,Normal,Greene City,Sports and travel
+GRC-STR-045,1/17/2021,15:44:34,Mona McPherson,Female,44,Normal,Greene City,Sports and travel
+GRC-STR-046,2/19/2021,9:17:01,Ida Hickman,Female,30,Member,Greene City,Sports and travel
+GRC-STR-047,1/14/2021,18:52:39,Sherri Alvarado,Female,39,Normal,Greene City,Sports and travel
+GRC-STR-048,1/24/2021,15:17:05,Robbie Raymond,Female,67,Member,Greene City,Sports and travel
+GRC-STR-049,1/8/2021,14:40:57,Young Hardy,Female,46,Member,Greene City,Sports and travel
+GRC-STR-050,3/5/2021,13:46:01,Roy Boyd,Male,56,Normal,Greene City,Sports and travel
+GRC-STR-051,2/13/2021,8:29:34,Derek Meadows,Male,55,Normal,Greene City,Sports and travel
+GRC-STR-052,2/26/2021,13:25:35,Bertha Wise,Female,19,Member,Greene City,Sports and travel
+GRC-STR-053,1/3/2021,14:41:11,Alejandro Caldwell,Male,85,Normal,Greene City,Sports and travel
+GRC-STR-054,1/12/2021,10:07:03,Devin Wheeler,Male,72,Normal,Greene City,Sports and travel
+GRC-STR-055,2/14/2021,14:51:33,Abby Potter,Female,75,Member,Greene City,Sports and travel
+GRC-STR-056,1/9/2021,17:47:52,Irma Holmes,Female,56,Member,Greene City,Sports and travel
+GRC-STR-057,1/2/2021,19:58:57,Steve Bernard,Male,59,Normal,Greene City,Sports and travel
+GRC-STR-058,3/15/2021,18:31:56,Miguel Piper,Male,64,Member,Greene City,Sports and travel
+GRC-STR-059,2/20/2021,13:27:11,Bernard Moses,Male,50,Member,Greene City,Sports and travel
+GRC-STR-060,2/15/2021,8:42:35,Casey Witt,Male,68,Member,Greene City,Sports and travel
+GRC-STR-061,3/2/2021,12:30:06,Scott Hickey,Male,42,Normal,Greene City,Sports and travel
+GRC-STR-062,1/24/2021,10:19:45,Christina Velez,Female,21,Normal,Greene City,Sports and travel
+OLI-CLO-001,3/19/2021,9:56:02,Ronda Ashley,Female,76,Member,Olinger,Clothing
+OLI-CLO-002,1/25/2021,18:57:18,Jorge Graham,Male,77,Member,Olinger,Clothing
+OLI-CLO-003,2/11/2021,13:12:10,Clarence Fernandez,Male,72,Normal,Olinger,Clothing
+OLI-CLO-004,3/25/2021,14:16:22,Herbert Wilkinson,Male,27,Normal,Olinger,Clothing
+OLI-CLO-005,3/26/2021,15:11:33,Jon Cantu,Male,90,Member,Olinger,Clothing
+OLI-CLO-006,3/1/2021,8:32:21,Frank Thomas,Male,82,Normal,Olinger,Clothing
+OLI-CLO-007,1/5/2021,18:17:12,Young Bowers,Male,88,Normal,Olinger,Clothing
+OLI-CLO-008,3/2/2021,9:08:50,Sophia McCarthy,Female,59,Normal,Olinger,Clothing
+OLI-CLO-009,1/8/2021,10:25:44,Naomi Baldwin,Female,27,Normal,Olinger,Clothing
+OLI-CLO-010,2/18/2021,13:14:40,Calvin Gentry,Male,86,Normal,Olinger,Clothing
+OLI-CLO-011,2/13/2021,20:41:11,Lindsey Gorman,Female,33,Normal,Olinger,Clothing
+OLI-CLO-012,2/9/2021,9:00:00,Taylor Godfrey,Male,33,Normal,Olinger,Clothing
+OLI-CLO-013,1/13/2021,17:53:09,Miriam Schneider,Female,38,Member,Olinger,Clothing
+OLI-CLO-014,2/21/2021,19:46:32,Laurie Wall,Female,34,Member,Olinger,Clothing
+OLI-CLO-015,3/5/2021,12:26:51,Lydia Roach,Female,31,Member,Olinger,Clothing
+OLI-CLO-016,2/28/2021,14:15:02,Maurice Wiley,Male,63,Member,Olinger,Clothing
+OLI-CLO-017,3/17/2021,18:22:25,Toby Hamilton,Male,54,Member,Olinger,Clothing
+OLI-CLO-018,3/7/2021,12:52:25,Kathleen Mooney,Female,27,Normal,Olinger,Clothing
+OLI-CLO-019,2/2/2021,9:57:59,Audrey Gregory,Female,36,Normal,Olinger,Clothing
+OLI-CLO-020,3/20/2021,11:02:49,Martin Hurst,Male,21,Member,Olinger,Clothing
+OLI-CLO-021,1/2/2021,16:31:19,Ricky Schmitt,Male,62,Normal,Olinger,Clothing
+OLI-CLO-022,2/5/2021,14:48:52,Justin Meyer,Male,24,Member,Olinger,Clothing
+OLI-CLO-023,2/15/2021,19:42:02,Kimberly Hoffman,Female,77,Member,Olinger,Clothing
+OLI-CLO-024,3/8/2021,9:01:26,Desiree James,Female,70,Normal,Olinger,Clothing
+OLI-CLO-025,1/6/2021,10:10:55,Lynne McDowell,Female,89,Normal,Olinger,Clothing
+OLI-CLO-026,1/29/2021,9:37:36,Kyle Smith,Male,55,Normal,Olinger,Clothing
+OLI-CLO-027,2/6/2021,10:49:15,Manuel Baldwin,Male,75,Member,Olinger,Clothing
+OLI-CLO-028,1/27/2021,10:02:38,Tracie Bauer,Female,34,Member,Olinger,Clothing
+OLI-CLO-029,2/15/2021,18:30:41,Alberta Gentry,Female,86,Member,Olinger,Clothing
+OLI-CLO-030,2/16/2021,14:16:46,Alyssa Hendrix,Female,67,Member,Olinger,Clothing
+OLI-CLO-031,1/28/2021,18:36:29,Melinda Campos,Female,39,Normal,Olinger,Clothing
+OLI-CLO-032,2/8/2021,16:16:57,Ella Chen,Female,50,Member,Olinger,Clothing
+OLI-CLO-033,3/9/2021,17:40:06,Don O'Neal,Male,73,Normal,Olinger,Clothing
+OLI-CLO-034,1/8/2021,19:58:11,Cecil Barr,Male,66,Normal,Olinger,Clothing
+OLI-CLO-035,3/10/2021,18:29:31,Johnny Donovan,Male,87,Normal,Olinger,Clothing
+OLI-CLO-036,1/5/2021,15:01:33,Caroline Brady,Female,60,Member,Olinger,Clothing
+OLI-CLO-037,3/18/2021,19:59:35,Samantha Doty,Female,43,Member,Olinger,Clothing
+OLI-CLO-038,2/13/2021,17:28:11,Sonia Ray,Female,56,Member,Olinger,Clothing
+OLI-CLO-039,3/14/2021,16:08:03,Gilberto Barnes,Male,77,Normal,Olinger,Clothing
+OLI-CLO-040,1/26/2021,11:57:51,Edna Walsh,Female,61,Normal,Olinger,Clothing
+OLI-CLO-041,1/26/2021,10:30:42,Kay Booth,Female,20,Normal,Olinger,Clothing
+OLI-CLO-042,1/8/2021,18:03:53,Mattie Bell,Female,35,Member,Olinger,Clothing
+OLI-CLO-043,2/7/2021,15:18:39,Teresa Huber,Female,65,Member,Olinger,Clothing
+OLI-CLO-044,1/9/2021,20:36:35,Josie Herman,Female,33,Normal,Olinger,Clothing
+OLI-CLO-045,2/10/2021,9:16:54,Joan Gardner,Female,87,Member,Olinger,Clothing
+OLI-CLO-046,2/7/2021,11:37:27,Yvette Schmitt,Female,60,Normal,Olinger,Clothing
+OLI-CLO-047,1/20/2021,14:24:13,Bobby Bruce,Male,77,Normal,Olinger,Clothing
+OLI-CLO-048,1/31/2021,11:24:12,Earl Calhoun,Male,36,Member,Olinger,Clothing
+OLI-CLO-049,3/16/2021,15:27:44,Brad Holmes,Male,54,Normal,Olinger,Clothing
+OLI-CLO-050,1/25/2021,12:24:18,Josefina Byers,Female,30,Member,Olinger,Clothing
+OLI-CLO-051,1/5/2021,9:00:47,Loretta Moss,Female,66,Normal,Olinger,Clothing
+OLI-CLO-052,3/23/2021,14:34:58,Trevor Boyd,Male,75,Member,Olinger,Clothing
+OLI-CLO-053,1/31/2021,14:04:01,Judy Newton,Female,72,Normal,Olinger,Clothing
+OLI-CLO-054,1/23/2021,12:08:04,Maryann Figueroa,Female,23,Normal,Olinger,Clothing
+OLI-CLO-055,3/13/2021,8:01:37,Rick Welsh,Male,71,Normal,Olinger,Clothing
+OLI-CLO-056,2/12/2021,14:22:39,Shawn Robertson,Male,29,Member,Olinger,Clothing
+OLI-CLO-057,3/30/2021,12:10:43,Mandy Haskins,Female,22,Member,Olinger,Clothing
+OLI-CLO-058,3/13/2021,17:35:09,Sophia Sheridan,Female,49,Normal,Olinger,Clothing
+OLI-CLO-059,3/2/2021,9:57:12,Sandy Bruce,Female,39,Member,Olinger,Clothing
+OLI-CLO-060,1/18/2021,14:21:52,Edmund Bennett,Male,49,Normal,Olinger,Clothing
+OLI-CLO-061,2/2/2021,15:15:09,Wilma Patrick,Female,64,Member,Olinger,Clothing
+OLI-CLO-062,3/27/2021,17:14:06,Andy Hand,Male,56,Member,Olinger,Clothing
+OLI-CLO-063,3/18/2021,15:03:19,Brent Ashley,Male,48,Member,Olinger,Clothing
+OLI-CLO-064,2/7/2021,19:07:20,Simon McCclure,Male,74,Normal,Olinger,Clothing
+OLI-ELE-001,3/8/2021,12:56:09,Heather Schwartz,Female,41,Normal,Olinger,Electronics
+OLI-ELE-002,3/25/2021,20:19:50,Guillermo Reed,Male,87,Normal,Olinger,Electronics
+OLI-ELE-003,2/25/2021,13:32:38,Roger Ibarra,Male,33,Member,Olinger,Electronics
+OLI-ELE-004,2/28/2021,15:43:14,Joy Leonard,Female,55,Normal,Olinger,Electronics
+OLI-ELE-005,3/12/2021,15:57:10,Terrance Arroyo,Male,62,Normal,Olinger,Electronics
+OLI-ELE-006,3/9/2021,15:14:33,Brenda Dugan,Female,48,Normal,Olinger,Electronics
+OLI-ELE-007,1/13/2021,20:21:07,Rose Cochran,Female,19,Normal,Olinger,Electronics
+OLI-ELE-008,2/9/2021,16:36:06,Roxanne Weeks,Female,24,Normal,Olinger,Electronics
+OLI-ELE-009,2/1/2021,11:16:39,Sara Wagner,Female,61,Normal,Olinger,Electronics
+OLI-ELE-010,3/3/2021,8:38:23,Edgar McGuire,Male,81,Member,Olinger,Electronics
+OLI-ELE-011,3/3/2021,18:35:10,Christophe Davis,Male,60,Normal,Olinger,Electronics
+OLI-ELE-012,1/14/2021,11:02:23,Oliver Anderson,Male,76,Normal,Olinger,Electronics
+OLI-ELE-013,1/4/2021,20:18:46,Vicki Copeland,Female,43,Member,Olinger,Electronics
+OLI-ELE-014,2/17/2021,18:47:41,Jerome Howard,Male,58,Normal,Olinger,Electronics
+OLI-ELE-015,1/31/2021,9:56:51,Alvin Wright,Male,77,Member,Olinger,Electronics
+OLI-ELE-016,2/7/2021,17:48:20,Zachary Olson,Male,43,Member,Olinger,Electronics
+OLI-ELE-017,3/14/2021,13:45:17,Garrett Stevenson,Male,39,Normal,Olinger,Electronics
+OLI-ELE-018,3/3/2021,17:53:42,Paula Arias,Female,22,Member,Olinger,Electronics
+OLI-ELE-019,3/29/2021,8:53:15,Ryan Robinson,Male,56,Normal,Olinger,Electronics
+OLI-ELE-020,2/10/2021,11:04:45,Sharon Duke,Female,72,Member,Olinger,Electronics
+OLI-ELE-021,1/10/2021,16:15:25,Nate Wilkerson,Male,58,Member,Olinger,Electronics
+OLI-ELE-022,3/28/2021,18:05:02,Frankie Frazier,Female,35,Normal,Olinger,Electronics
+OLI-ELE-023,3/4/2021,17:55:37,Rebecca Root,Female,18,Normal,Olinger,Electronics
+OLI-ELE-024,3/14/2021,16:34:30,Jeannette Nelson,Female,89,Normal,Olinger,Electronics
+OLI-ELE-025,3/19/2021,14:03:43,Lynda Louis,Female,73,Normal,Olinger,Electronics
+OLI-ELE-026,1/23/2021,15:30:27,Jayne McIntosh,Female,36,Normal,Olinger,Electronics
+OLI-ELE-027,2/7/2021,15:34:03,Lupe Hatfield,Female,57,Normal,Olinger,Electronics
+OLI-ELE-028,1/27/2021,10:40:44,Lindsey Moyer,Female,80,Member,Olinger,Electronics
+OLI-ELE-029,2/15/2021,20:23:39,Patricia Gamble,Female,62,Member,Olinger,Electronics
+OLI-ELE-030,3/7/2021,11:02:33,Jorge Lynn,Male,41,Normal,Olinger,Electronics
+OLI-ELE-031,2/15/2021,9:01:28,Amanda Thomas,Female,33,Normal,Olinger,Electronics
+OLI-ELE-032,1/1/2021,9:08:12,Deanna Blevins,Female,48,Normal,Olinger,Electronics
+OLI-ELE-033,1/28/2021,18:57:03,Cody Wagoner,Male,86,Member,Olinger,Electronics
+OLI-ELE-034,3/7/2021,21:22:30,Noel Frye,Male,56,Normal,Olinger,Electronics
+OLI-ELE-035,1/23/2021,8:45:50,Ralph Robertson,Male,69,Normal,Olinger,Electronics
+OLI-ELE-036,3/14/2021,19:14:51,Tyrone Lancaster,Male,87,Member,Olinger,Electronics
+OLI-ELE-037,3/19/2021,17:52:38,Sally Garrison,Female,84,Normal,Olinger,Electronics
+OLI-ELE-038,3/19/2021,21:53:50,Rosie Christian,Female,84,Member,Olinger,Electronics
+OLI-ELE-039,2/16/2021,13:04:09,Ivan Shaffer,Male,71,Member,Olinger,Electronics
+OLI-ELE-040,2/24/2021,17:07:45,Christian Minor,Male,27,Normal,Olinger,Electronics
+OLI-ELE-041,2/27/2021,17:43:40,Edith Read,Female,69,Normal,Olinger,Electronics
+OLI-ELE-042,2/19/2021,17:28:36,Shelley Gould,Female,38,Normal,Olinger,Electronics
+OLI-ELE-043,1/29/2021,20:56:11,Pat Rich,Male,82,Normal,Olinger,Electronics
+OLI-ELE-044,2/19/2021,10:02:09,Victor Stein,Male,84,Normal,Olinger,Electronics
+OLI-ELE-045,3/3/2021,20:00:16,Maureen Patterson,Female,44,Member,Olinger,Electronics
+OLI-ELE-046,3/24/2021,20:02:58,Tommy Wu,Male,57,Normal,Olinger,Electronics
+OLI-ELE-047,1/15/2021,9:48:03,Chester Russel,Male,36,Normal,Olinger,Electronics
+OLI-ELE-048,1/14/2021,17:12:46,Jaime Green,Female,44,Member,Olinger,Electronics
+OLI-ELE-049,1/19/2021,15:07:33,Darlene Kaiser,Female,47,Normal,Olinger,Electronics
+OLI-ELE-050,2/2/2021,8:08:30,Marilyn Durham,Female,20,Normal,Olinger,Electronics
+OLI-ELE-051,3/26/2021,19:44:56,Wayne Daniel,Male,31,Member,Olinger,Electronics
+OLI-ELE-052,3/30/2021,17:32:51,Vincent Drake,Male,69,Member,Olinger,Electronics
+OLI-ELE-053,1/9/2021,14:57:50,Seth Nixon,Male,25,Normal,Olinger,Electronics
+OLI-ELE-054,3/29/2021,20:27:02,Bret Powell,Male,49,Member,Olinger,Electronics
+OLI-ELE-055,2/18/2021,20:59:14,Ruby Henry,Female,45,Member,Olinger,Electronics
+OLI-FBV-001,2/6/2021,8:26:04,Mae Payne,Female,86,Member,Olinger,Food and beverages
+OLI-FBV-002,3/4/2021,10:24:02,Therese McDonald,Female,77,Member,Olinger,Food and beverages
+OLI-FBV-003,2/3/2021,19:14:07,Ira Plummer,Male,52,Member,Olinger,Food and beverages
+OLI-FBV-004,1/6/2021,13:24:04,Rudy Johns,Male,21,Normal,Olinger,Food and beverages
+OLI-FBV-005,3/5/2021,16:03:47,Shari Joyce,Female,60,Member,Olinger,Food and beverages
+OLI-FBV-006,1/23/2021,9:35:06,Reginald Kaufman,Male,69,Normal,Olinger,Food and beverages
+OLI-FBV-007,2/23/2021,15:36:38,Pamela McDowell,Female,47,Member,Olinger,Food and beverages
+OLI-FBV-008,3/24/2021,14:00:19,Cheryl Farmer,Female,19,Normal,Olinger,Food and beverages
+OLI-FBV-009,1/8/2021,10:31:57,Kayla Harrison,Female,68,Member,Olinger,Food and beverages
+OLI-FBV-010,2/22/2021,21:00:29,Nancy Bush,Female,50,Member,Olinger,Food and beverages
+OLI-FBV-011,2/7/2021,20:08:23,Corinne Schneider,Female,60,Normal,Olinger,Food and beverages
+OLI-FBV-012,1/19/2021,17:38:31,June Howe,Female,35,Normal,Olinger,Food and beverages
+OLI-FBV-013,1/23/2021,12:21:16,Zach Holland,Male,84,Member,Olinger,Food and beverages
+OLI-FBV-014,3/16/2021,13:55:22,Lauren McLaughlin,Female,67,Normal,Olinger,Food and beverages
+OLI-FBV-015,2/17/2021,9:53:29,Lucille Freeman,Female,62,Member,Olinger,Food and beverages
+OLI-FBV-016,1/16/2021,11:23:25,Robbie McGuire,Female,69,Normal,Olinger,Food and beverages
+OLI-FBV-017,2/25/2021,10:26:34,Jan Davenport,Male,33,Normal,Olinger,Food and beverages
+OLI-FBV-018,2/14/2021,8:45:36,Tim Duke,Male,51,Member,Olinger,Food and beverages
+OLI-FBV-019,2/9/2021,13:22:07,Darla Schultz,Female,26,Member,Olinger,Food and beverages
+OLI-FBV-020,2/26/2021,19:08:00,Kristen Chapman,Female,24,Normal,Olinger,Food and beverages
+OLI-FBV-021,3/12/2021,12:45:10,Matt Lynch,Male,46,Member,Olinger,Food and beverages
+OLI-FBV-022,1/30/2021,12:38:08,Lydia Carpenter,Female,84,Normal,Olinger,Food and beverages
+OLI-FBV-023,2/27/2021,13:30:51,Susanne McGowan,Female,80,Normal,Olinger,Food and beverages
+OLI-FBV-024,3/7/2021,17:50:55,Ramon Preston,Male,67,Normal,Olinger,Food and beverages
+OLI-FBV-025,2/19/2021,16:11:47,Constance Lopez,Female,56,Normal,Olinger,Food and beverages
+OLI-FBV-026,3/1/2021,21:30:02,Lorena Decker,Female,36,Member,Olinger,Food and beverages
+OLI-FBV-027,3/11/2021,14:32:12,Salvatore Hunter,Male,80,Normal,Olinger,Food and beverages
+OLI-FBV-028,3/25/2021,11:15:41,Rose Mann,Female,75,Normal,Olinger,Food and beverages
+OLI-FBV-029,3/28/2021,12:35:16,Ann Avila,Female,55,Member,Olinger,Food and beverages
+OLI-FBV-030,3/8/2021,15:47:49,Francisco Simmons,Male,64,Normal,Olinger,Food and beverages
+OLI-FBV-031,3/8/2021,11:53:46,James Mann,Male,42,Member,Olinger,Food and beverages
+OLI-FBV-032,1/15/2021,13:03:47,Les Gleason,Male,55,Member,Olinger,Food and beverages
+OLI-FBV-033,2/14/2021,19:58:24,Danny Cantrell,Male,88,Member,Olinger,Food and beverages
+OLI-FBV-034,2/23/2021,17:34:13,Morris House,Male,66,Normal,Olinger,Food and beverages
+OLI-FBV-035,2/3/2021,19:12:58,Darryl Hoffman,Male,30,Normal,Olinger,Food and beverages
+OLI-FBV-036,3/17/2021,14:50:12,Yvette Morton,Female,69,Member,Olinger,Food and beverages
+OLI-FBV-037,2/9/2021,9:29:38,Greg Hanson,Male,89,Normal,Olinger,Food and beverages
+OLI-FBV-038,2/2/2021,13:44:32,Juan Forbes,Male,70,Normal,Olinger,Food and beverages
+OLI-FBV-039,1/27/2021,18:42:03,Diana Patterson,Female,41,Normal,Olinger,Food and beverages
+OLI-FBV-040,3/26/2021,14:22:33,Mayra Cramer,Female,65,Normal,Olinger,Food and beverages
+OLI-FBV-041,2/1/2021,11:50:26,Susie Howe,Female,28,Member,Olinger,Food and beverages
+OLI-FBV-042,1/30/2021,16:41:17,Marisa Hooper,Female,69,Member,Olinger,Food and beverages
+OLI-FBV-043,2/11/2021,14:50:02,Albert Patterson,Male,88,Normal,Olinger,Food and beverages
+OLI-FBV-044,1/14/2021,16:16:08,Ben Cook,Male,45,Normal,Olinger,Food and beverages
+OLI-FBV-045,1/7/2021,12:52:04,Steve Brewer,Male,34,Normal,Olinger,Food and beverages
+OLI-FBV-046,3/14/2021,14:01:52,Franklin Cohen,Male,39,Normal,Olinger,Food and beverages
+OLI-FBV-047,3/28/2021,21:46:11,Marina Alvarez,Female,73,Member,Olinger,Food and beverages
+OLI-FBV-048,3/9/2021,14:11:20,Aurora Nelson,Female,58,Member,Olinger,Food and beverages
+OLI-FBV-049,3/30/2021,18:59:08,Alberta Conner,Female,74,Member,Olinger,Food and beverages
+OLI-FBV-050,2/12/2021,8:26:44,Molly Forbes,Female,41,Member,Olinger,Food and beverages
+OLI-FBV-051,3/12/2021,10:12:19,Nathaniel Robbins,Male,51,Member,Olinger,Food and beverages
+OLI-FBV-052,1/16/2021,15:44:20,Crystal Sherman,Female,26,Normal,Olinger,Food and beverages
+OLI-FBV-053,1/21/2021,18:08:50,Simon Robbins,Male,74,Member,Olinger,Food and beverages
+OLI-FBV-054,1/11/2021,9:04:45,Adriana Walters,Female,53,Member,Olinger,Food and beverages
+OLI-FBV-055,1/14/2021,17:26:56,Bryan Farrell,Male,74,Normal,Olinger,Food and beverages
+OLI-FBV-056,2/2/2021,16:46:17,Marsha Crawford,Female,78,Member,Olinger,Food and beverages
+OLI-FBV-057,2/6/2021,10:06:28,Shelia Duffy,Female,56,Normal,Olinger,Food and beverages
+OLI-FBV-058,1/17/2021,16:45:56,Mohammad Wallace,Male,32,Member,Olinger,Food and beverages
+OLI-FBV-059,2/13/2021,9:38:29,Janelle Dorsey,Female,58,Member,Olinger,Food and beverages
+OLI-FBV-060,1/8/2021,14:37:58,Joanne Flynn,Female,62,Member,Olinger,Food and beverages
+OLI-FBV-061,1/8/2021,20:29:07,Loren Peck,Male,30,Member,Olinger,Food and beverages
+OLI-FBV-062,2/5/2021,21:50:46,Maribel Ritter,Female,36,Member,Olinger,Food and beverages
+OLI-FBV-063,3/21/2021,15:12:25,Teresa Bishop,Female,65,Normal,Olinger,Food and beverages
+OLI-FBV-064,1/13/2021,19:57:50,Deanna Boyer,Female,28,Member,Olinger,Food and beverages
+OLI-FBV-065,1/10/2021,18:24:02,Ray Peters,Male,48,Member,Olinger,Food and beverages
+OLI-FBV-066,1/19/2021,8:13:06,Marc Tucker,Male,30,Member,Olinger,Food and beverages
+OLI-HBE-001,3/23/2021,19:21:56,Bobbie Hensley,Female,58,Normal,Olinger,Health and beauty
+OLI-HBE-002,2/10/2021,18:09:20,Patrice Ryan,Female,69,Normal,Olinger,Health and beauty
+OLI-HBE-003,1/22/2021,11:15:52,Eva Winter,Female,49,Normal,Olinger,Health and beauty
+OLI-HBE-004,1/21/2021,15:21:06,Lena Floyd,Female,73,Normal,Olinger,Health and beauty
+OLI-HBE-005,2/6/2021,8:19:23,Bernard Oliver,Male,61,Normal,Olinger,Health and beauty
+OLI-HBE-006,2/5/2021,9:49:34,Gloria Stanley,Female,19,Member,Olinger,Health and beauty
+OLI-HBE-007,3/8/2021,12:06:11,Kristin Walters,Female,57,Normal,Olinger,Health and beauty
+OLI-HBE-008,1/25/2021,15:20:45,Willard Carter,Male,49,Member,Olinger,Health and beauty
+OLI-HBE-009,2/5/2021,12:17:13,Marcella Ochoa,Female,74,Member,Olinger,Health and beauty
+OLI-HBE-010,3/8/2021,20:31:30,Irene Stout,Female,26,Normal,Olinger,Health and beauty
+OLI-HBE-011,3/19/2021,21:29:59,Howard Lambert,Male,72,Normal,Olinger,Health and beauty
+OLI-HBE-012,1/28/2021,12:22:20,Leon Moses,Male,87,Member,Olinger,Health and beauty
+OLI-HBE-013,1/25/2021,20:49:25,Garry James,Male,30,Normal,Olinger,Health and beauty
+OLI-HBE-014,3/26/2021,21:57:58,Alfonso Bennett,Male,55,Member,Olinger,Health and beauty
+OLI-HBE-015,3/12/2021,18:50:29,Luther Holden,Male,44,Normal,Olinger,Health and beauty
+OLI-HBE-016,1/28/2021,8:21:25,Rodolfo Sims,Male,81,Normal,Olinger,Health and beauty
+OLI-HBE-017,1/3/2021,14:07:23,Lucinda Randall,Female,70,Member,Olinger,Health and beauty
+OLI-HBE-018,3/11/2021,13:06:23,Ethel Carrillo,Female,65,Member,Olinger,Health and beauty
+OLI-HBE-019,2/18/2021,21:38:34,Eddie Curry,Male,61,Member,Olinger,Health and beauty
+OLI-HBE-020,1/18/2021,10:51:31,Sylvia Perez,Female,78,Normal,Olinger,Health and beauty
+OLI-HBE-021,1/22/2021,17:35:51,Rita Riddle,Female,19,Member,Olinger,Health and beauty
+OLI-HBE-022,2/8/2021,8:52:36,Whitney Woods,Female,72,Member,Olinger,Health and beauty
+OLI-HBE-023,1/1/2021,21:37:53,Bill Freeman,Male,57,Normal,Olinger,Health and beauty
+OLI-HBE-024,1/3/2021,16:03:41,Grant Alvarado,Male,33,Member,Olinger,Health and beauty
+OLI-HBE-025,3/3/2021,9:26:25,Ruben Witt,Male,67,Member,Olinger,Health and beauty
+OLI-HBE-026,3/30/2021,19:39:37,Keith Dennis,Male,90,Normal,Olinger,Health and beauty
+OLI-HBE-027,2/16/2021,16:32:36,Isabel Brewer,Female,80,Member,Olinger,Health and beauty
+OLI-HBE-028,2/15/2021,10:34:28,Devin Durham,Male,42,Normal,Olinger,Health and beauty
+OLI-HBE-029,2/7/2021,19:39:45,Myron Ho,Male,32,Normal,Olinger,Health and beauty
+OLI-HBE-030,2/4/2021,9:20:37,Natalie Lehman,Female,79,Normal,Olinger,Health and beauty
+OLI-HBE-031,2/6/2021,15:46:20,Alberta Knox,Female,69,Member,Olinger,Health and beauty
+OLI-HBE-032,3/10/2021,18:23:56,Bobby Hutchinson,Male,49,Member,Olinger,Health and beauty
+OLI-HBE-033,1/15/2021,20:20:24,Johnnie Dalton,Male,65,Member,Olinger,Health and beauty
+OLI-HBE-034,2/27/2021,16:19:02,Lola Cline,Female,41,Member,Olinger,Health and beauty
+OLI-HBE-035,3/5/2021,16:05:13,Ismael Ortiz,Male,50,Member,Olinger,Health and beauty

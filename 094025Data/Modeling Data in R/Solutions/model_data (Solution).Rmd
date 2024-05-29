@@ -1,0 +1,216 @@
+---
+title: "Modeling Data in R"
+output: html_notebook
+---
+
+# Load the GCE trial dataset and relevant packages
+```{r message = FALSE}
+library(ggplot2)
+library(dplyr)
+load("../data/gce_trial.rda")
+gce_trial
+```
+# Create a simple linear model of COGS and income
+```{r}
+lin_reg <- lm(GrossIncome ~ COGS, gce_trial)
+lin_reg
+```
+# Plot the line of best fit for the model
+```{r}
+cogs_lin_plt <- ggplot(gce_trial, aes(COGS, GrossIncome)) + geom_point() + stat_smooth(method = "lm")
+cogs_lin_plt
+```
+# Use the simple linear model to make predictions on new data
+```{r}
+new_data <- data.frame(COGS = 324.55)
+
+lin_pred <- predict(lin_reg, new_data)
+lin_pred
+```
+# Add the predicted data to the line graph
+```{r}
+new_data$Prediction <- lin_pred
+
+cogs_lin_plt + geom_point(data = new_data, aes(COGS, Prediction), color = "red", size = 3, shape = "triangle")
+```
+# Create a multivariate linear model
+```{r}
+mlin_reg <- lm(GrossIncome ~ COGS + CustRating, gce_trial)
+mlin_reg
+```
+# Sample three values from the dataset at random to use for prediction
+```{r}
+set.seed(2022)
+cogs_sample <- sample(gce_trial$COGS, 3)
+related_cols <- gce_trial %>% filter(COGS %in% cogs_sample) %>% select(CustRating, GrossIncome)
+
+sample_data <- data.frame(COGS = cogs_sample, CustRating = related_cols$CustRating, ActualIncome = related_cols$GrossIncome)
+sample_data
+```
+# Use the multivariate linear model to make predictions on sampled data
+```{r}
+mlin_pred <- predict(mlin_reg, sample_data)
+sample_data$PredIncome <- mlin_pred
+sample_data
+```
+# Observe the multivariate predictions on the COGS regression plot
+```{r}
+cogs_lin_plt + geom_point(data = sample_data, aes(COGS, PredIncome), color = "red", size = 3, shape = "triangle")
+```
+# Observe the multivariate predictions on the customer ratings regression plot
+```{r}
+rating_lin_plot <- ggplot(gce_trial, aes(CustRating, GrossIncome)) +
+  geom_point() +
+  stat_smooth(method = "lm") +
+  geom_point(data = sample_data, aes(CustRating, PredIncome), color = "red", size = 3, shape = "triangle")
+
+rating_lin_plot
+```
+# Create a logistic regression model for customer return status
+```{r}
+log_reg <- glm(CustReturned ~ CustRating + Revenue + CustAge, gce_trial, family = "binomial")
+log_reg
+```
+# Use the logistic regression model to make predictions on new data
+```{r}
+new_data <- data.frame(CustRating = 6.5, Revenue = 156.80, CustAge = 37)
+
+log_pred <- predict(log_reg, new_data, type = "response")
+log_pred
+```
+# Load the time series dataset
+```{r}
+load("../data/gc_daily_sales.rda")
+gc_daily_sales
+```
+# Create a forecasting model for daily sales
+```{r}
+f_cast <- arima(gc_daily_sales$Sales, order = c(3, 1, 1), list(order = c(3, 1, 1), period = 7))
+f_cast
+```
+# Use the forecasting model to predict future sales
+```{r}
+proj_days <- 14
+f_pred <- predict(f_cast, proj_days)
+f_pred$pred
+```
+# Add the predicted sales values to the existing data frame
+```{r}
+apr_week_one <- seq(from = as.POSIXct("2022-04-01"), length.out = proj_days, by = "day")
+
+f_sales <- data.frame(Date = apr_week_one, Sales = f_pred$pred, Status = "Predicted")
+
+gc_daily_sales <- rbind(gc_daily_sales, f_sales)
+tail(gc_daily_sales)
+```
+# Plot the forecasted sales values
+```{r}
+ggplot(gc_daily_sales) + geom_line(aes(Date, Sales, group = 1, color = Status))
+```
+# Select the most relevant features
+```{r}
+ml_data <- gce_trial %>% select(CustGender, CustAge, CustType, Branch, ProductLine, CustRating, CustReturned, Revenue, GrossIncome)
+ml_data
+```
+# Bin the CustAge feature
+```{r}
+ml_data <- ml_data %>% mutate(CustAgeBin = case_when(
+  CustAge <= 24 & CustAge >= 18 ~ "18–24",
+  CustAge <= 34 & CustAge >= 25 ~ "25–34",
+  CustAge <= 44 & CustAge >= 35 ~ "35–44",
+  CustAge <= 54 & CustAge >= 45 ~ "45–54",
+  CustAge <= 64 & CustAge >= 55 ~ "55–64",
+  CustAge <= 74 & CustAge >= 65 ~ "65–74",
+  CustAge >= 75 ~ "75+"))
+
+ml_data$CustAgeBin <- as.factor(ml_data$CustAgeBin)
+ml_data <- ml_data %>% select(-CustAge)
+ml_data
+```
+# Encode the Branch and ProductLine features
+```{r}
+ml_data <- ml_data %>% mutate(
+  BranchCC = case_when(Branch == "Carbon Creek" ~  1L, TRUE ~ 0L),
+  BranchGC = case_when(Branch == "Greene City" ~ 1L, TRUE ~ 0L),
+  BranchOl = case_when(Branch == "Olinger" ~ 1L, TRUE ~ 0L))
+
+ml_data <- ml_data %>% mutate(
+  ProdClth = case_when(ProductLine == "Clothing" ~  1L, TRUE ~ 0L),
+  ProdElec = case_when(ProductLine == "Electronics" ~  1L, TRUE ~ 0L),
+  ProdFood = case_when(ProductLine == "Food and beverages" ~  1L, TRUE ~ 0L),
+  ProdHlth = case_when(ProductLine == "Health and beauty" ~  1L, TRUE ~ 0L),
+  ProdHome = case_when(ProductLine == "Home and lifestyle" ~  1L, TRUE ~ 0L),
+  ProdSprt = case_when(ProductLine == "Sports and travel" ~  1L, TRUE ~ 0L))
+
+ml_data <- ml_data %>% select(-c("Branch", "ProductLine"))
+ml_data
+```
+# Split the data into training and testing sets
+```{r}
+train_size <- nrow(ml_data) * 0.75
+set.seed(2022)
+train_rows <- sample(1:nrow(ml_data), train_size)
+test_rows <- (!1:nrow(ml_data) %in% train_rows)
+
+train_data <- ml_data[train_rows, ]
+test_data <- ml_data[test_rows, ]
+
+train_data
+test_data
+```
+# Train a decision tree model
+```{r}
+install.packages("rpart")
+library(rpart)
+
+tree <- rpart(CustReturned ~ ., train_data)
+```
+# Use the decision tree to make predictions from test data
+```{r}
+tree_probs <- predict(tree, test_data)
+tree_results <- test_data %>% mutate(Predicted = case_when(tree_probs[, 2] >= 0.5 ~ "Yes", TRUE ~ "No"))
+  
+tree_results <- tree_results %>% relocate(Predicted, .before = everything()) %>% relocate(CustReturned, .before = everything())
+tree_results
+```
+# Plot the decision tree
+```{r}
+install.packages("rpart.plot")
+library(rpart.plot)
+
+rpart.plot(tree)
+```
+# Train a random forest model
+```{r}
+install.packages(c("caret", "randomForest"))
+library(caret, randomForest)
+
+rf <- train(CustReturned ~., train_data, method = "rf", importance = TRUE)
+```
+# Use the random forest to make predictions from test data
+```{r}
+rf_pred <- predict(rf, test_data)
+rf_results <- test_data
+rf_results$Predicted <- rf_pred
+  
+rf_results <- rf_results %>% relocate(Predicted, .before = everything()) %>% relocate(CustReturned, .before = everything())
+tree_results
+```
+# Identify feature importance
+```{r}
+plot(varImp(rf))
+```
+# Load new transaction data
+```{r}
+load("../data/new_data.rda")
+new_data
+```
+# Use the random forest model to predict returning customers from the new data
+```{r}
+new_data_pred <- predict(rf, new_data)
+
+new_data$Predicted <- new_data_pred
+
+new_data <- new_data %>% relocate(Predicted, .before = everything())
+new_data
+```

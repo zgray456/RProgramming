@@ -1,0 +1,78 @@
+---
+title: "Writing Conditional Statements and Loops"
+output: html_notebook
+---
+
+# Define the data
+```{r}
+cust_df <- data.frame(ProdScores = c(5.7, 7.2, 8.9, 4.0, 6.1, 6.1),
+                      ServScores = c(9.2, 4.0, 4.0, 4.5, 8.9, 5.2),
+                      Return = factor(c("Yes", "No", "No",
+                                        "Yes", "Yes", "Yes")))
+cust_df
+```
+# Generate a suggested action based on customer behavior
+```{r}
+
+
+
+
+
+
+
+
+
+
+```
+# Report all customer service scores
+```{r}
+
+
+
+
+
+
+
+
+
+```
+# Get return status for all customers except those with high service scores
+```{r}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+# Generate suggested actions for all customers
+```{r}
+cust_prod <- cust_df$ProdScores
+cust_ret <- cust_df$Return
+count <- 1
+
+for (i in cust_prod) {
+  msg_start <- paste0("Customer ", count, ":")
+  
+  if (i > 8.0 & cust_ret[count] == "No") {
+    msg <- paste(msg_start, "Find out why customer is not returning.")
+  } else if (i < 8.0 & cust_ret[count] == "Yes") {
+    msg <- paste(msg_start, "Contact customer about product quality.")
+  } else {
+    msg <- paste(msg_start, "Offer deal to entice customer.")
+  }
+  
+  print(msg)
+  count <- count + 1
+}
+```

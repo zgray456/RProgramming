@@ -1,0 +1,231 @@
+---
+title: "Visualizing Data in R"
+output: html_notebook
+---
+
+# Load the dataset and relevant packages
+```{r message = FALSE}
+
+
+
+
+```
+# Generate a scatter plot comparing revenue and gross income
+```{r}
+
+```
+# Generate a line plot of revenue over each day in January
+```{r}
+
+
+
+
+```
+# Generate a bar chart of each branch's total revenue
+```{r}
+
+
+
+```
+# Generate a histogram showing the distribution of COGS
+```{r}
+
+```
+# Generate a box plot showing the distribution of COGS
+```{r}
+
+```
+# Load the ggplot2 package
+```{r}
+
+```
+# Generate a histogram of revenue
+```{r}
+
+```
+# Generate violin plots comparing the gross income distribution across each branch
+```{r}
+
+```
+# Generate stack plots to compare total items sold for each day in the first three months
+```{r}
+
+
+
+
+
+```
+# Generate a scatter plot comparing quantity to revenue
+```{r}
+
+```
+# Generate a jitter plot comparing quantity to revenue by gender
+```{r}
+
+```
+# Generate a bar chart of mean revenue for each branch for the health and beauty product line
+```{r}
+
+
+
+
+```
+# Create a data frame for plotting total revenue each day for January and February
+```{r}
+
+
+
+
+
+```
+# Generate a line graph of revenue by month
+```{r}
+
+
+
+
+```
+# Add a title to the plot and format it
+```{r}
+
+
+
+
+```
+# Modify the axis labels
+```{r}
+
+
+
+
+
+```
+# Expand the y-axis upper limit
+```{r}
+
+
+
+```
+# Add more ticks to the x-axis
+```{r}
+
+
+
+```
+# Modify the legend
+```{r}
+
+
+
+```
+# Apply a color palette to the lines and change the legend item labels
+```{r}
+
+
+
+
+
+
+```
+# Change the line types
+```{r}
+
+
+
+```
+# Add an annotation explaining a sharp drop in revenue
+```{r}
+
+
+
+
+
+```
+# Save the revenue line plot as a file
+```{r}
+
+```
+# Generate a bar chart that compares the quantity sold for each product line and branch
+```{r}
+qty_sum <- gce_trial %>% group_by(ProductLine, Branch, CustReturned) %>% summarize(Quantity = sum(Quantity))
+
+prod_bar <- ggplot(qty_sum) +
+  geom_bar(aes(ProductLine, Quantity, fill = Branch), color = "black", position = "dodge", stat = "identity") +
+  ggtitle("Quantity Sold for Each Product Line") +
+  theme(plot.title = element_text(face = "bold", size = 12, hjust = 0.5)) +
+  theme(panel.grid.major.x = element_blank()) +
+  theme(axis.text.x = element_text(face = "bold", size = 6)) +
+  theme(panel.background = element_rect(fill = "#EFEFFA")) +
+  xlab("Product Line") +
+  scale_fill_brewer(palette = "Set2") +
+  scale_y_continuous(breaks = seq(0, 400, 50)) +
+  scale_x_discrete(labels = c("Clothing", "Electronics", "Food and\nbeverages", "Health and\nbeauty", "Home and\nlifestyle", "Sports and\ntravel"))
+
+prod_bar
+```
+# Compare the distributions of revenue and quantity
+```{r}
+
+
+
+
+
+
+```
+# Compare quantity sold per product line and branch in a facet wrap
+```{r}
+
+
+
+  
+  # Formatting
+  ggtitle("Quantity Sold for Each Product Line") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid.major.x = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  theme(axis.ticks.x = element_blank()) +
+  xlab("") +
+  scale_fill_brewer(palette = "Set2")
+
+prod_wrap
+```
+# Compare customer return status by product line and branch
+```{r}
+
+
+
+
+  # Formatting
+  ggtitle("Quantity Sold for Returning vs. Non-Returning Customers") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid.major.x = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  theme(axis.ticks.x = element_blank()) +
+  xlab("") +
+  scale_fill_brewer(palette = "Set2")
+  
+prod_grid
+```
+# Convert the data frame to a long format
+```{r}
+
+
+
+
+
+```
+# Compare income correlations with rating, revenue, and price
+```{r}
+
+
+
+  
+  # Formatting
+  ggtitle("Correlations with Gross Income") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  xlab("") +
+  ylab("Gross Income (USD)") +
+  scale_color_distiller(palette = "Blues", direction = 1)
+
+sctr_wrap
+```
